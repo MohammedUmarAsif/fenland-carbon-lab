@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Cite this later research extension separately from the 2025 dissertation."
+title: "Fenland Carbon Lab: reproducible carbon-flux emulation and generalisation"
+type: software
+authors:
+  - family-names: "Sayed"
+    given-names: "Mohammed Umar Asif"
+version: 0.1.0
+date-released: 2026-10-12
+license: MIT
+abstract: "An AI-assisted retrospective study of daily JULES carbon-flux emulation, temporal memory, grouped transfer and empirical uncertainty reliability."

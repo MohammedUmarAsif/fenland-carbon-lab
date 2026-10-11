@@ -1,0 +1,38 @@
+name: Publish approved research site
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Require reviewed rights record and authentic assets
+        run: |
+          test -f config/rights.yaml
+          test -f website/public/research.json
+          uv run --with pyyaml python -c "import pathlib,yaml; r=yaml.safe_load(pathlib.Path('config/rights.yaml').read_text()); assert r.get('approved') is True and r.get('data_derivatives') is True and r.get('dissertation') is True, 'Reviewed package rights approval missing'"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: website/package-lock.json
+      - run: npm ci && npm run build
+        working-directory: website
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: website/dist
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

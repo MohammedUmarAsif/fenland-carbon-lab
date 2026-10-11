@@ -1,0 +1,5768 @@
+[
+  {
+    "run_id": "weather-climatology-L1-s17",
+    "model": "climatology",
+    "direct": false,
+    "seed": 17,
+    "config": {},
+    "length_days": 1,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.013497500003722962,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.752793550491333,
+        "mae": 2.0471134185791016,
+        "bias": -0.3296475112438202,
+        "r2": 0.4770275354385376,
+        "sign_accuracy": 0.9142236699239956
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.965946912765503,
+        "mae": 1.9990184307098389,
+        "bias": 0.16963957250118256,
+        "r2": 0.4233196973800659,
+        "sign_accuracy": 0.8791827541827542
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.393712282180786,
+        "mae": 1.8798952102661133,
+        "bias": -0.04692589491605759,
+        "r2": 0.5542850494384766,
+        "sign_accuracy": 0.8921568627450981
+      }
+    }
+  },
+  {
+    "run_id": "weather-ridge-L1-s17",
+    "model": "ridge",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "alpha": 1
+    },
+    "length_days": 1,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.011719099995389115,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 3.583691358566284,
+        "mae": 2.7149510383605957,
+        "bias": -0.5116926431655884,
+        "r2": 0.11367547512054443,
+        "sign_accuracy": 0.7909880564603692
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 3.462042808532715,
+        "mae": 2.420152425765991,
+        "bias": 0.0168034415692091,
+        "r2": 0.2142702341079712,
+        "sign_accuracy": 0.8222329472329473
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 3.0006422996520996,
+        "mae": 2.3046534061431885,
+        "bias": -0.24604210257530212,
+        "r2": 0.29960697889328003,
+        "sign_accuracy": 0.7848583877995643
+      }
+    }
+  },
+  {
+    "run_id": "weather-rf-L1-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 1,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.7114367000031052,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 3.006729084810657,
+        "mae": 2.153971016377232,
+        "bias": -0.3969821402227466,
+        "r2": 0.37609253693860534,
+        "sign_accuracy": 0.8572204125950055
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 3.2731609450845207,
+        "mae": 2.1694242222482027,
+        "bias": -0.1397879710823857,
+        "r2": 0.2976669527807869,
+        "sign_accuracy": 0.8450772200772201
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.7053466511686715,
+        "mae": 1.9946066833066085,
+        "bias": 0.2627089057543258,
+        "r2": 0.43067642450173604,
+        "sign_accuracy": 0.8431372549019608
+      }
+    }
+  },
+  {
+    "run_id": "weather-rf-L1-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 1,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.7151818000056664,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 3.036722310278166,
+        "mae": 2.160022886269512,
+        "bias": -0.40567954929938344,
+        "r2": 0.36358304161297017,
+        "sign_accuracy": 0.8561346362649295
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 3.2807891080225096,
+        "mae": 2.1639890261344275,
+        "bias": -0.14802102008329973,
+        "r2": 0.29438953752334807,
+        "sign_accuracy": 0.8458815958815958
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.7202593553293926,
+        "mae": 2.0023514678094916,
+        "bias": 0.25500130508487534,
+        "r2": 0.4243825514250441,
+        "sign_accuracy": 0.8453159041394336
+      }
+    }
+  },
+  {
+    "run_id": "weather-rf-L1-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 1,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.704088699996646,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 3.007470736351585,
+        "mae": 2.1483139963782643,
+        "bias": -0.4215783353069943,
+        "r2": 0.3757847080742669,
+        "sign_accuracy": 0.8588490770901195
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 3.2643081449852205,
+        "mae": 2.1578899394659126,
+        "bias": -0.1467038339101372,
+        "r2": 0.30146096468323824,
+        "sign_accuracy": 0.8465250965250966
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.6920262040784695,
+        "mae": 1.9951902843738,
+        "bias": 0.2626194931612843,
+        "r2": 0.4362690346622722,
+        "sign_accuracy": 0.8415032679738562
+      }
+    }
+  },
+  {
+    "run_id": "weather-boosting-L1-s17",
+    "model": "boosting",
+    "direct": false,
+    "seed": 17,
+    "config": {},
+    "length_days": 1,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.3225172000020393,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.968343028271231,
+        "mae": 2.1231800997316905,
+        "bias": -0.4832511765550085,
+        "r2": 0.39192134573619464,
+        "sign_accuracy": 0.8724212812160695
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 3.227171022600973,
+        "mae": 2.1435074065277777,
+        "bias": -0.0968698544892888,
+        "r2": 0.31726472008340534,
+        "sign_accuracy": 0.8532818532818532
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.5890675012621047,
+        "mae": 1.9598635306933676,
+        "bias": 0.28906224272993364,
+        "r2": 0.4785651284796474,
+        "sign_accuracy": 0.855119825708061
+      }
+    }
+  },
+  {
+    "run_id": "weather-boosting-L1-s29",
+    "model": "boosting",
+    "direct": false,
+    "seed": 29,
+    "config": {},
+    "length_days": 1,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.2981953999988036,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.968343028271231,
+        "mae": 2.1231800997316905,
+        "bias": -0.4832511765550085,
+        "r2": 0.39192134573619464,
+        "sign_accuracy": 0.8724212812160695
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 3.227171022600973,
+        "mae": 2.1435074065277777,
+        "bias": -0.0968698544892888,
+        "r2": 0.31726472008340534,
+        "sign_accuracy": 0.8532818532818532
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.5890675012621047,
+        "mae": 1.9598635306933676,
+        "bias": 0.28906224272993364,
+        "r2": 0.4785651284796474,
+        "sign_accuracy": 0.855119825708061
+      }
+    }
+  },
+  {
+    "run_id": "weather-boosting-L1-s43",
+    "model": "boosting",
+    "direct": false,
+    "seed": 43,
+    "config": {},
+    "length_days": 1,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.30073790000460576,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.968343028271231,
+        "mae": 2.1231800997316905,
+        "bias": -0.4832511765550085,
+        "r2": 0.39192134573619464,
+        "sign_accuracy": 0.8724212812160695
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 3.227171022600973,
+        "mae": 2.1435074065277777,
+        "bias": -0.0968698544892888,
+        "r2": 0.31726472008340534,
+        "sign_accuracy": 0.8532818532818532
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.5890675012621047,
+        "mae": 1.9598635306933676,
+        "bias": 0.28906224272993364,
+        "r2": 0.4785651284796474,
+        "sign_accuracy": 0.855119825708061
+      }
+    }
+  },
+  {
+    "run_id": "weather-lstm-L1-s17",
+    "model": "lstm",
+    "direct": false,
+    "seed": 17,
+    "config": {},
+    "length_days": 1,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 8.912409199998365,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.856081613623766,
+        "validation_mse_scaled": 0.7125054597854614
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.6075540786068186,
+        "validation_mse_scaled": 0.5246837139129639
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.5535702114999418,
+        "validation_mse_scaled": 0.5293356776237488
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.5441700257530196,
+        "validation_mse_scaled": 0.5302848815917969
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.5389325958374659,
+        "validation_mse_scaled": 0.5298200249671936
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.5356769068016587,
+        "validation_mse_scaled": 0.5274468660354614
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 3.3800137042999268,
+        "mae": 2.4994280338287354,
+        "bias": -0.3867899477481842,
+        "r2": 0.21156030893325806,
+        "sign_accuracy": 0.8479913137893594
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 3.330169677734375,
+        "mae": 2.3128035068511963,
+        "bias": 0.0714249387383461,
+        "r2": 0.27298885583877563,
+        "sign_accuracy": 0.8452380952380952
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.8261096477508545,
+        "mae": 2.105839729309082,
+        "bias": 0.09451852738857269,
+        "r2": 0.378714382648468,
+        "sign_accuracy": 0.8382352941176471
+      }
+    }
+  },
+  {
+    "run_id": "weather-lstm-L1-s29",
+    "model": "lstm",
+    "direct": false,
+    "seed": 29,
+    "config": {},
+    "length_days": 1,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.4922514999998384,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.8738987654607585,
+        "validation_mse_scaled": 0.7291920185089111
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.6279209612667536,
+        "validation_mse_scaled": 0.5461469888687134
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.5586260452540341,
+        "validation_mse_scaled": 0.5262946486473083
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.5426332476413827,
+        "validation_mse_scaled": 0.5260748863220215
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.5359842574630873,
+        "validation_mse_scaled": 0.5342365503311157
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.532622406055296,
+        "validation_mse_scaled": 0.5306814312934875
+      },
+      {
+        "epoch": 7,
+        "train_mse_scaled": 0.5315070400327654,
+        "validation_mse_scaled": 0.5316336154937744
+      },
+      {
+        "epoch": 8,
+        "train_mse_scaled": 0.5289117055508481,
+        "validation_mse_scaled": 0.5275710225105286
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 3.163482427597046,
+        "mae": 2.2829208374023438,
+        "bias": -0.49544575810432434,
+        "r2": 0.30934298038482666,
+        "sign_accuracy": 0.8555917480998915
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 3.1586811542510986,
+        "mae": 2.1765198707580566,
+        "bias": -0.08526652306318283,
+        "r2": 0.34593647718429565,
+        "sign_accuracy": 0.8513513513513513
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.556062698364258,
+        "mae": 1.914184331893921,
+        "bias": 0.23052296042442322,
+        "r2": 0.49177467823028564,
+        "sign_accuracy": 0.8480392156862745
+      }
+    }
+  },
+  {
+    "run_id": "weather-lstm-L1-s43",
+    "model": "lstm",
+    "direct": false,
+    "seed": 43,
+    "config": {},
+    "length_days": 1,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.44455330000346294,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.8629843360970996,
+        "validation_mse_scaled": 0.7134340405464172
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.6179878275436785,
+        "validation_mse_scaled": 0.5228173732757568
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.5554138257551764,
+        "validation_mse_scaled": 0.5203695297241211
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.5430935185121042,
+        "validation_mse_scaled": 0.5237153172492981
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.5376117853328543,
+        "validation_mse_scaled": 0.5204132795333862
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.5345128053527683,
+        "validation_mse_scaled": 0.528409481048584
+      },
+      {
+        "epoch": 7,
+        "train_mse_scaled": 0.5323028963787011,
+        "validation_mse_scaled": 0.5351141691207886
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 3.2403244972229004,
+        "mae": 2.3481292724609375,
+        "bias": -0.43185192346572876,
+        "r2": 0.2753828763961792,
+        "sign_accuracy": 0.8512486427795874
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 3.2044413089752197,
+        "mae": 2.2075297832489014,
+        "bias": 0.007004196755588055,
+        "r2": 0.32684820890426636,
+        "sign_accuracy": 0.8495817245817245
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.6195807456970215,
+        "mae": 1.9522274732589722,
+        "bias": 0.22359168529510498,
+        "r2": 0.4662020206451416,
+        "sign_accuracy": 0.8480392156862745
+      }
+    }
+  },
+  {
+    "run_id": "weather-climatology-L7-s17",
+    "model": "climatology",
+    "direct": false,
+    "seed": 17,
+    "config": {},
+    "length_days": 7,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.020630199993320275,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.752793550491333,
+        "mae": 2.0471134185791016,
+        "bias": -0.3296475112438202,
+        "r2": 0.4770275354385376,
+        "sign_accuracy": 0.9142236699239956
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.965946912765503,
+        "mae": 1.9990184307098389,
+        "bias": 0.16963957250118256,
+        "r2": 0.4233196973800659,
+        "sign_accuracy": 0.8791827541827542
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.393712282180786,
+        "mae": 1.8798952102661133,
+        "bias": -0.04692589491605759,
+        "r2": 0.5542850494384766,
+        "sign_accuracy": 0.8921568627450981
+      }
+    }
+  },
+  {
+    "run_id": "weather-ridge-L7-s17",
+    "model": "ridge",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "alpha": 1
+    },
+    "length_days": 7,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.02183530000183964,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 3.5087969303131104,
+        "mae": 2.6675033569335938,
+        "bias": -0.5677892565727234,
+        "r2": 0.15033435821533203,
+        "sign_accuracy": 0.8469055374592834
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 3.3990066051483154,
+        "mae": 2.4159622192382812,
+        "bias": -0.021769342944025993,
+        "r2": 0.2426224946975708,
+        "sign_accuracy": 0.8342985842985843
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.949504852294922,
+        "mae": 2.276705026626587,
+        "bias": -0.29061436653137207,
+        "r2": 0.3232761025428772,
+        "sign_accuracy": 0.7924836601307189
+      }
+    }
+  },
+  {
+    "run_id": "weather-rf-L7-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 7,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 4.209223400001065,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.828192222717102,
+        "mae": 2.000616005850866,
+        "bias": -0.49116893139272894,
+        "r2": 0.4479868410065089,
+        "sign_accuracy": 0.8740499457111836
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.767981116890046,
+        "mae": 1.938443645483876,
+        "bias": -0.23011261595115878,
+        "r2": 0.49773301868604314,
+        "sign_accuracy": 0.8811132561132561
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.329570029800963,
+        "mae": 1.7722231748457855,
+        "bias": 0.2645782197337388,
+        "r2": 0.5778518738577427,
+        "sign_accuracy": 0.8828976034858388
+      }
+    }
+  },
+  {
+    "run_id": "weather-rf-L7-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 7,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 4.082351199998811,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.847481214294024,
+        "mae": 2.0038070431332673,
+        "bias": -0.49479667127695715,
+        "r2": 0.44043142283865055,
+        "sign_accuracy": 0.8724212812160695
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.771982624390593,
+        "mae": 1.9338766283294466,
+        "bias": -0.22836000388470618,
+        "r2": 0.49627977334148754,
+        "sign_accuracy": 0.8780566280566281
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.3426450491713626,
+        "mae": 1.7826605421884658,
+        "bias": 0.2664525207948224,
+        "r2": 0.5730998513099548,
+        "sign_accuracy": 0.8796296296296297
+      }
+    }
+  },
+  {
+    "run_id": "weather-rf-L7-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 7,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 4.084155999997165,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.8419684096914333,
+        "mae": 2.003255502270634,
+        "bias": -0.4923795032078014,
+        "r2": 0.4425960068151372,
+        "sign_accuracy": 0.8707926167209555
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.7646516712436364,
+        "mae": 1.9341583721149005,
+        "bias": -0.23730086171204284,
+        "r2": 0.4989405882499345,
+        "sign_accuracy": 0.8785392535392536
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.339280994856748,
+        "mae": 1.7752159244681645,
+        "bias": 0.29100411953343164,
+        "r2": 0.5743250340596251,
+        "sign_accuracy": 0.8779956427015251
+      }
+    }
+  },
+  {
+    "run_id": "weather-boosting-L7-s17",
+    "model": "boosting",
+    "direct": false,
+    "seed": 17,
+    "config": {},
+    "length_days": 7,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.4579033000045456,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.6706707830995238,
+        "mae": 1.9247618636263544,
+        "bias": -0.47479955095292004,
+        "r2": 0.5077652229725345,
+        "sign_accuracy": 0.8968512486427795
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.758210175010676,
+        "mae": 1.932580816124367,
+        "bias": -0.15824596604305755,
+        "r2": 0.5012727534974029,
+        "sign_accuracy": 0.8828828828828829
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.2708289222224427,
+        "mae": 1.7462268873181914,
+        "bias": 0.4067600322242375,
+        "r2": 0.5988727567058528,
+        "sign_accuracy": 0.8828976034858388
+      }
+    }
+  },
+  {
+    "run_id": "weather-boosting-L7-s29",
+    "model": "boosting",
+    "direct": false,
+    "seed": 29,
+    "config": {},
+    "length_days": 7,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.45610429999942426,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.6706707830995238,
+        "mae": 1.9247618636263544,
+        "bias": -0.47479955095292004,
+        "r2": 0.5077652229725345,
+        "sign_accuracy": 0.8968512486427795
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.758210175010676,
+        "mae": 1.932580816124367,
+        "bias": -0.15824596604305755,
+        "r2": 0.5012727534974029,
+        "sign_accuracy": 0.8828828828828829
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.2708289222224427,
+        "mae": 1.7462268873181914,
+        "bias": 0.4067600322242375,
+        "r2": 0.5988727567058528,
+        "sign_accuracy": 0.8828976034858388
+      }
+    }
+  },
+  {
+    "run_id": "weather-boosting-L7-s43",
+    "model": "boosting",
+    "direct": false,
+    "seed": 43,
+    "config": {},
+    "length_days": 7,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.4705221999975038,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.6706707830995238,
+        "mae": 1.9247618636263544,
+        "bias": -0.47479955095292004,
+        "r2": 0.5077652229725345,
+        "sign_accuracy": 0.8968512486427795
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.758210175010676,
+        "mae": 1.932580816124367,
+        "bias": -0.15824596604305755,
+        "r2": 0.5012727534974029,
+        "sign_accuracy": 0.8828828828828829
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.2708289222224427,
+        "mae": 1.7462268873181914,
+        "bias": 0.4067600322242375,
+        "r2": 0.5988727567058528,
+        "sign_accuracy": 0.8828976034858388
+      }
+    }
+  },
+  {
+    "run_id": "weather-lstm-L7-s17",
+    "model": "lstm",
+    "direct": false,
+    "seed": 17,
+    "config": {},
+    "length_days": 7,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.8208396999980323,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.6757318621600575,
+        "validation_mse_scaled": 0.44324687123298645
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.4342290802417536,
+        "validation_mse_scaled": 0.3945753574371338
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.39564704203201884,
+        "validation_mse_scaled": 0.3678564727306366
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.3744795937298842,
+        "validation_mse_scaled": 0.37319430708885193
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.3633414728121539,
+        "validation_mse_scaled": 0.3540220260620117
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.3514394407452556,
+        "validation_mse_scaled": 0.36490926146507263
+      },
+      {
+        "epoch": 7,
+        "train_mse_scaled": 0.34381740134346345,
+        "validation_mse_scaled": 0.37530362606048584
+      },
+      {
+        "epoch": 8,
+        "train_mse_scaled": 0.33785210674777105,
+        "validation_mse_scaled": 0.3616091310977936
+      },
+      {
+        "epoch": 9,
+        "train_mse_scaled": 0.3326968425490156,
+        "validation_mse_scaled": 0.3696897625923157
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.6614766120910645,
+        "mae": 1.9463176727294922,
+        "bias": -0.36430665850639343,
+        "r2": 0.5111485719680786,
+        "sign_accuracy": 0.9022801302931596
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.8083956241607666,
+        "mae": 1.9470739364624023,
+        "bias": -0.24649417400360107,
+        "r2": 0.4829590320587158,
+        "sign_accuracy": 0.8814350064350064
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.2535862922668457,
+        "mae": 1.7056933641433716,
+        "bias": 0.20141182839870453,
+        "r2": 0.6049412488937378,
+        "sign_accuracy": 0.8927015250544662
+      }
+    }
+  },
+  {
+    "run_id": "weather-lstm-L7-s29",
+    "model": "lstm",
+    "direct": false,
+    "seed": 29,
+    "config": {},
+    "length_days": 7,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.9807881000015186,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.7556672864391606,
+        "validation_mse_scaled": 0.4530019164085388
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.4467268437085591,
+        "validation_mse_scaled": 0.40279483795166016
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.40643578749311604,
+        "validation_mse_scaled": 0.3766108453273773
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.38537167718665555,
+        "validation_mse_scaled": 0.37299656867980957
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.37132878554157855,
+        "validation_mse_scaled": 0.36559194326400757
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.3599552990163175,
+        "validation_mse_scaled": 0.3627482056617737
+      },
+      {
+        "epoch": 7,
+        "train_mse_scaled": 0.35499264311563966,
+        "validation_mse_scaled": 0.3407740890979767
+      },
+      {
+        "epoch": 8,
+        "train_mse_scaled": 0.3459629189716987,
+        "validation_mse_scaled": 0.3663818836212158
+      },
+      {
+        "epoch": 9,
+        "train_mse_scaled": 0.34086813395154325,
+        "validation_mse_scaled": 0.3592655062675476
+      },
+      {
+        "epoch": 10,
+        "train_mse_scaled": 0.33273143397289484,
+        "validation_mse_scaled": 0.35047122836112976
+      },
+      {
+        "epoch": 11,
+        "train_mse_scaled": 0.32530782426846316,
+        "validation_mse_scaled": 0.35688358545303345
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.704376697540283,
+        "mae": 1.9401283264160156,
+        "bias": -0.49533694982528687,
+        "r2": 0.495262086391449,
+        "sign_accuracy": 0.8908794788273615
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.761215925216675,
+        "mae": 1.9444067478179932,
+        "bias": -0.41358482837677,
+        "r2": 0.5001851916313171,
+        "sign_accuracy": 0.8809523809523809
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.20813250541687,
+        "mae": 1.7142647504806519,
+        "bias": 0.09583526849746704,
+        "r2": 0.6207168102264404,
+        "sign_accuracy": 0.8954248366013072
+      }
+    }
+  },
+  {
+    "run_id": "weather-lstm-L7-s43",
+    "model": "lstm",
+    "direct": false,
+    "seed": 43,
+    "config": {},
+    "length_days": 7,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.8148533999992651,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.6863167146201569,
+        "validation_mse_scaled": 0.4370511770248413
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.4414994446810786,
+        "validation_mse_scaled": 0.4009194076061249
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.4034725970125848,
+        "validation_mse_scaled": 0.3803512454032898
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.38157328307160854,
+        "validation_mse_scaled": 0.36769649386405945
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.36795938108539544,
+        "validation_mse_scaled": 0.34562569856643677
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.3570409860186516,
+        "validation_mse_scaled": 0.36987990140914917
+      },
+      {
+        "epoch": 7,
+        "train_mse_scaled": 0.3494022112649022,
+        "validation_mse_scaled": 0.3568469285964966
+      },
+      {
+        "epoch": 8,
+        "train_mse_scaled": 0.34057405128157964,
+        "validation_mse_scaled": 0.35059255361557007
+      },
+      {
+        "epoch": 9,
+        "train_mse_scaled": 0.33382782346204704,
+        "validation_mse_scaled": 0.3514120280742645
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.527920961380005,
+        "mae": 1.883203148841858,
+        "bias": -0.31703105568885803,
+        "r2": 0.5589797496795654,
+        "sign_accuracy": 0.9158523344191096
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.836266279220581,
+        "mae": 1.9808077812194824,
+        "bias": -0.16748246550559998,
+        "r2": 0.4726458191871643,
+        "sign_accuracy": 0.8803088803088803
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.21905517578125,
+        "mae": 1.7222282886505127,
+        "bias": 0.1498643010854721,
+        "r2": 0.6169552803039551,
+        "sign_accuracy": 0.8894335511982571
+      }
+    }
+  },
+  {
+    "run_id": "weather-climatology-L24-s17",
+    "model": "climatology",
+    "direct": false,
+    "seed": 17,
+    "config": {},
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.0452588000043761,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.752793550491333,
+        "mae": 2.0471134185791016,
+        "bias": -0.3296475112438202,
+        "r2": 0.4770275354385376,
+        "sign_accuracy": 0.9142236699239956
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.965946912765503,
+        "mae": 1.9990184307098389,
+        "bias": 0.16963957250118256,
+        "r2": 0.4233196973800659,
+        "sign_accuracy": 0.8791827541827542
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.393712282180786,
+        "mae": 1.8798952102661133,
+        "bias": -0.04692589491605759,
+        "r2": 0.5542850494384766,
+        "sign_accuracy": 0.8921568627450981
+      }
+    }
+  },
+  {
+    "run_id": "weather-ridge-L24-s17",
+    "model": "ridge",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "alpha": 1
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.0522902000011527,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 3.429291009902954,
+        "mae": 2.6186513900756836,
+        "bias": -0.5906579494476318,
+        "r2": 0.18840336799621582,
+        "sign_accuracy": 0.8713355048859935
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 3.3337624073028564,
+        "mae": 2.3913278579711914,
+        "bias": -0.06583458185195923,
+        "r2": 0.27141934633255005,
+        "sign_accuracy": 0.8449163449163449
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.9089608192443848,
+        "mae": 2.2441246509552,
+        "bias": -0.31028512120246887,
+        "r2": 0.34175270795822144,
+        "sign_accuracy": 0.8137254901960784
+      }
+    }
+  },
+  {
+    "run_id": "weather-rf-L24-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 13.84114309999859,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.4206892518203835,
+        "mae": 1.8042838658689635,
+        "bias": -0.3537510119518465,
+        "r2": 0.5956013780006388,
+        "sign_accuracy": 0.9001085776330076
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.3849579537098453,
+        "mae": 1.7506391756555466,
+        "bias": -0.2553730708815791,
+        "r2": 0.6271193588817718,
+        "sign_accuracy": 0.9013835263835264
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0330281644800925,
+        "mae": 1.5788503922939792,
+        "bias": 0.2725756493455992,
+        "r2": 0.6784858321378504,
+        "sign_accuracy": 0.9133986928104575
+      }
+    }
+  },
+  {
+    "run_id": "weather-rf-L24-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 13.96293400000286,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.4379359455333587,
+        "mae": 1.811420677133369,
+        "bias": -0.3446523129315855,
+        "r2": 0.589818409427624,
+        "sign_accuracy": 0.9017372421281216
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.396364758244309,
+        "mae": 1.7513841360573337,
+        "bias": -0.2603562106335808,
+        "r2": 0.6235439934287228,
+        "sign_accuracy": 0.9017052767052767
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0307526133225484,
+        "mae": 1.5805544215294105,
+        "bias": 0.27520385718113805,
+        "r2": 0.6792051654953619,
+        "sign_accuracy": 0.9128540305010894
+      }
+    }
+  },
+  {
+    "run_id": "weather-rf-L24-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 13.96173020000424,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.4315075464927105,
+        "mae": 1.8152000622207665,
+        "bias": -0.3493077043235212,
+        "r2": 0.5919787078143093,
+        "sign_accuracy": 0.9011943539630836
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.4007900734442806,
+        "mae": 1.754947387417172,
+        "bias": -0.25218947859502694,
+        "r2": 0.6221523232276114,
+        "sign_accuracy": 0.8968790218790219
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0266387200550344,
+        "mae": 1.5775386492390084,
+        "bias": 0.28583104400527704,
+        "r2": 0.6805035796527312,
+        "sign_accuracy": 0.9123093681917211
+      }
+    }
+  },
+  {
+    "run_id": "weather-boosting-L24-s17",
+    "model": "boosting",
+    "direct": false,
+    "seed": 17,
+    "config": {},
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.9480555999980425,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.386662661765428,
+        "mae": 1.7813476384677291,
+        "bias": -0.3353527526383284,
+        "r2": 0.6068903898058858,
+        "sign_accuracy": 0.9044516829533116
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.238557421159455,
+        "mae": 1.665216009055846,
+        "bias": -0.17368082487159744,
+        "r2": 0.6714928241453433,
+        "sign_accuracy": 0.912001287001287
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0386328265002414,
+        "mae": 1.603366218709184,
+        "bias": 0.3966857765274422,
+        "r2": 0.6767106849674194,
+        "sign_accuracy": 0.9188453159041394
+      }
+    }
+  },
+  {
+    "run_id": "weather-boosting-L24-s29",
+    "model": "boosting",
+    "direct": false,
+    "seed": 29,
+    "config": {},
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.9764270999949076,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.386662661765428,
+        "mae": 1.7813476384677291,
+        "bias": -0.3353527526383284,
+        "r2": 0.6068903898058858,
+        "sign_accuracy": 0.9044516829533116
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.238557421159455,
+        "mae": 1.665216009055846,
+        "bias": -0.17368082487159744,
+        "r2": 0.6714928241453433,
+        "sign_accuracy": 0.912001287001287
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0386328265002414,
+        "mae": 1.603366218709184,
+        "bias": 0.3966857765274422,
+        "r2": 0.6767106849674194,
+        "sign_accuracy": 0.9188453159041394
+      }
+    }
+  },
+  {
+    "run_id": "weather-boosting-L24-s43",
+    "model": "boosting",
+    "direct": false,
+    "seed": 43,
+    "config": {},
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.9494565999993938,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.386662661765428,
+        "mae": 1.7813476384677291,
+        "bias": -0.3353527526383284,
+        "r2": 0.6068903898058858,
+        "sign_accuracy": 0.9044516829533116
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.238557421159455,
+        "mae": 1.665216009055846,
+        "bias": -0.17368082487159744,
+        "r2": 0.6714928241453433,
+        "sign_accuracy": 0.912001287001287
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0386328265002414,
+        "mae": 1.603366218709184,
+        "bias": 0.3966857765274422,
+        "r2": 0.6767106849674194,
+        "sign_accuracy": 0.9188453159041394
+      }
+    }
+  },
+  {
+    "run_id": "weather-lstm-L24-s17",
+    "model": "lstm",
+    "direct": false,
+    "seed": 17,
+    "config": {},
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 2.4762128999936976,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.6243133443734312,
+        "validation_mse_scaled": 0.3756735920906067
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.3643428170818871,
+        "validation_mse_scaled": 0.27846238017082214
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.29773199676433315,
+        "validation_mse_scaled": 0.25327518582344055
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.2599130708328804,
+        "validation_mse_scaled": 0.2393808364868164
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.24181391946888325,
+        "validation_mse_scaled": 0.2194952368736267
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.23303406043936034,
+        "validation_mse_scaled": 0.22326155006885529
+      },
+      {
+        "epoch": 7,
+        "train_mse_scaled": 0.2250809099360568,
+        "validation_mse_scaled": 0.2397283911705017
+      },
+      {
+        "epoch": 8,
+        "train_mse_scaled": 0.22149835765755704,
+        "validation_mse_scaled": 0.2183443158864975
+      },
+      {
+        "epoch": 9,
+        "train_mse_scaled": 0.2130423156511483,
+        "validation_mse_scaled": 0.20175379514694214
+      },
+      {
+        "epoch": 10,
+        "train_mse_scaled": 0.211462784218473,
+        "validation_mse_scaled": 0.22632145881652832
+      },
+      {
+        "epoch": 11,
+        "train_mse_scaled": 0.20550629932961154,
+        "validation_mse_scaled": 0.19556452333927155
+      },
+      {
+        "epoch": 12,
+        "train_mse_scaled": 0.20344663502780036,
+        "validation_mse_scaled": 0.19745752215385437
+      },
+      {
+        "epoch": 13,
+        "train_mse_scaled": 0.19887292522356953,
+        "validation_mse_scaled": 0.20474770665168762
+      },
+      {
+        "epoch": 14,
+        "train_mse_scaled": 0.19641853309475357,
+        "validation_mse_scaled": 0.2183685004711151
+      },
+      {
+        "epoch": 15,
+        "train_mse_scaled": 0.19514265232394423,
+        "validation_mse_scaled": 0.20836374163627625
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.1836304664611816,
+        "mae": 1.6407371759414673,
+        "bias": -0.12384619563817978,
+        "r2": 0.6709288358688354,
+        "sign_accuracy": 0.9125950054288816
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.2996084690093994,
+        "mae": 1.619268774986267,
+        "bias": -0.3831407427787781,
+        "r2": 0.6533300876617432,
+        "sign_accuracy": 0.9081402831402832
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.8250563144683838,
+        "mae": 1.404868483543396,
+        "bias": -0.00034476883593015373,
+        "r2": 0.740900993347168,
+        "sign_accuracy": 0.9166666666666666
+      }
+    }
+  },
+  {
+    "run_id": "weather-lstm-L24-s29",
+    "model": "lstm",
+    "direct": false,
+    "seed": 29,
+    "config": {},
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 1.4643488000001526,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.7264976863007268,
+        "validation_mse_scaled": 0.40830016136169434
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.3673806452692072,
+        "validation_mse_scaled": 0.2917275130748749
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.28676010102021304,
+        "validation_mse_scaled": 0.23174135386943817
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.25382379562782875,
+        "validation_mse_scaled": 0.2249344140291214
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.24151916525571715,
+        "validation_mse_scaled": 0.20930743217468262
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.23285833489225208,
+        "validation_mse_scaled": 0.22983519732952118
+      },
+      {
+        "epoch": 7,
+        "train_mse_scaled": 0.22580385762076396,
+        "validation_mse_scaled": 0.2573874890804291
+      },
+      {
+        "epoch": 8,
+        "train_mse_scaled": 0.21972463814520923,
+        "validation_mse_scaled": 0.23025086522102356
+      },
+      {
+        "epoch": 9,
+        "train_mse_scaled": 0.21482602195127204,
+        "validation_mse_scaled": 0.24551185965538025
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.385080575942993,
+        "mae": 1.8151954412460327,
+        "bias": -0.17052792012691498,
+        "r2": 0.6074113845825195,
+        "sign_accuracy": 0.9082519001085776
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.6258058547973633,
+        "mae": 1.8448535203933716,
+        "bias": -0.4109007716178894,
+        "r2": 0.5480049848556519,
+        "sign_accuracy": 0.8827220077220077
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.9770759344100952,
+        "mae": 1.5479750633239746,
+        "bias": 0.07894066721200943,
+        "r2": 0.6959395408630371,
+        "sign_accuracy": 0.9014161220043573
+      }
+    }
+  },
+  {
+    "run_id": "weather-lstm-L24-s43",
+    "model": "lstm",
+    "direct": false,
+    "seed": 43,
+    "config": {},
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 2.24857090000296,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.6269969311887102,
+        "validation_mse_scaled": 0.3443913459777832
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.36735085406267953,
+        "validation_mse_scaled": 0.3077647089958191
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.30660604597221275,
+        "validation_mse_scaled": 0.23638811707496643
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.26831226528478724,
+        "validation_mse_scaled": 0.2232605516910553
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.2510425000582683,
+        "validation_mse_scaled": 0.2267688363790512
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.2391368053462672,
+        "validation_mse_scaled": 0.21500848233699799
+      },
+      {
+        "epoch": 7,
+        "train_mse_scaled": 0.23094758590801054,
+        "validation_mse_scaled": 0.2159309983253479
+      },
+      {
+        "epoch": 8,
+        "train_mse_scaled": 0.2242810121009981,
+        "validation_mse_scaled": 0.2323947697877884
+      },
+      {
+        "epoch": 9,
+        "train_mse_scaled": 0.21688676090316308,
+        "validation_mse_scaled": 0.19711507856845856
+      },
+      {
+        "epoch": 10,
+        "train_mse_scaled": 0.21296978462756738,
+        "validation_mse_scaled": 0.19488826394081116
+      },
+      {
+        "epoch": 11,
+        "train_mse_scaled": 0.21014254914734395,
+        "validation_mse_scaled": 0.2050231248140335
+      },
+      {
+        "epoch": 12,
+        "train_mse_scaled": 0.2058021184064691,
+        "validation_mse_scaled": 0.207825168967247
+      },
+      {
+        "epoch": 13,
+        "train_mse_scaled": 0.2021159235540376,
+        "validation_mse_scaled": 0.21691538393497467
+      },
+      {
+        "epoch": 14,
+        "train_mse_scaled": 0.2001046624953271,
+        "validation_mse_scaled": 0.23240232467651367
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.0712902545928955,
+        "mae": 1.5999759435653687,
+        "bias": -0.14611051976680756,
+        "r2": 0.7039169073104858,
+        "sign_accuracy": 0.9087947882736156
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.73579478263855,
+        "mae": 1.8297010660171509,
+        "bias": -0.6325567960739136,
+        "r2": 0.5093459486961365,
+        "sign_accuracy": 0.887065637065637
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.858062744140625,
+        "mae": 1.4477131366729736,
+        "bias": -0.1159476786851883,
+        "r2": 0.7314444780349731,
+        "sign_accuracy": 0.9074074074074074
+      }
+    }
+  },
+  {
+    "run_id": "weather-climatology-L60-s17",
+    "model": "climatology",
+    "direct": false,
+    "seed": 17,
+    "config": {},
+    "length_days": 60,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.09450980000110576,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.752793550491333,
+        "mae": 2.0471134185791016,
+        "bias": -0.3296475112438202,
+        "r2": 0.4770275354385376,
+        "sign_accuracy": 0.9142236699239956
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.965946912765503,
+        "mae": 1.9990184307098389,
+        "bias": 0.16963957250118256,
+        "r2": 0.4233196973800659,
+        "sign_accuracy": 0.8791827541827542
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.393712282180786,
+        "mae": 1.8798952102661133,
+        "bias": -0.04692589491605759,
+        "r2": 0.5542850494384766,
+        "sign_accuracy": 0.8921568627450981
+      }
+    }
+  },
+  {
+    "run_id": "weather-ridge-L60-s17",
+    "model": "ridge",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "alpha": 1
+    },
+    "length_days": 60,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.12218079999729525,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 3.339928388595581,
+        "mae": 2.5833215713500977,
+        "bias": -0.4502546191215515,
+        "r2": 0.23015040159225464,
+        "sign_accuracy": 0.8713355048859935
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 3.270921468734741,
+        "mae": 2.385422945022583,
+        "bias": 0.051438115537166595,
+        "r2": 0.29862773418426514,
+        "sign_accuracy": 0.8392857142857143
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.9528658390045166,
+        "mae": 2.226245164871216,
+        "bias": -0.2658662796020508,
+        "r2": 0.32173287868499756,
+        "sign_accuracy": 0.8050108932461874
+      }
+    }
+  },
+  {
+    "run_id": "weather-rf-L60-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 60,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 36.879238699999405,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.277696224032413,
+        "mae": 1.737184486620062,
+        "bias": -0.2508699670695217,
+        "r2": 0.6419668932957338,
+        "sign_accuracy": 0.9142236699239956
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.2665274260368813,
+        "mae": 1.6641191638241013,
+        "bias": -0.06883954238515702,
+        "r2": 0.6632323704773821,
+        "sign_accuracy": 0.9152187902187903
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.9918738637493472,
+        "mae": 1.553759948144299,
+        "bias": 0.18795729065360625,
+        "r2": 0.6913708155953213,
+        "sign_accuracy": 0.9123093681917211
+      }
+    }
+  },
+  {
+    "run_id": "weather-rf-L60-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 60,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 35.25454659999377,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.3238373381366704,
+        "mae": 1.75901919468979,
+        "bias": -0.2276854417681306,
+        "r2": 0.6273140382309776,
+        "sign_accuracy": 0.9136807817589576
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.274486522622524,
+        "mae": 1.67168613299998,
+        "bias": -0.08261207129826888,
+        "r2": 0.6608630435308747,
+        "sign_accuracy": 0.9144144144144144
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.9776852217935612,
+        "mae": 1.5430463123133367,
+        "bias": 0.1843869355624152,
+        "r2": 0.695752049352952,
+        "sign_accuracy": 0.9101307189542484
+      }
+    }
+  },
+  {
+    "run_id": "weather-rf-L60-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 60,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 35.83527779999713,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.314663001738803,
+        "mae": 1.7598474655991265,
+        "bias": -0.24365130611156077,
+        "r2": 0.630250902236597,
+        "sign_accuracy": 0.9158523344191096
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.2666857338681057,
+        "mae": 1.6678306198015358,
+        "bias": -0.07310186459279527,
+        "r2": 0.6631853251036606,
+        "sign_accuracy": 0.916988416988417
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.9667915718729096,
+        "mae": 1.5458869156749306,
+        "bias": 0.19806742051761175,
+        "r2": 0.6990945857497279,
+        "sign_accuracy": 0.9112200435729847
+      }
+    }
+  },
+  {
+    "run_id": "weather-boosting-L60-s17",
+    "model": "boosting",
+    "direct": false,
+    "seed": 17,
+    "config": {},
+    "length_days": 60,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 2.688792900000408,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.2575881881843283,
+        "mae": 1.6836156251994752,
+        "bias": -0.2502073404757445,
+        "r2": 0.6482605892921705,
+        "sign_accuracy": 0.9185667752442996
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.167566545712712,
+        "mae": 1.6229151807908813,
+        "bias": -0.07879011467341049,
+        "r2": 0.691998194920795,
+        "sign_accuracy": 0.9148970398970399
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.9496690080687564,
+        "mae": 1.5709381190235283,
+        "bias": 0.3656807700357492,
+        "r2": 0.7043110457051929,
+        "sign_accuracy": 0.9161220043572985
+      }
+    }
+  },
+  {
+    "run_id": "weather-boosting-L60-s29",
+    "model": "boosting",
+    "direct": false,
+    "seed": 29,
+    "config": {},
+    "length_days": 60,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 2.483386799998698,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.2575881881843283,
+        "mae": 1.6836156251994752,
+        "bias": -0.2502073404757445,
+        "r2": 0.6482605892921705,
+        "sign_accuracy": 0.9185667752442996
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.167566545712712,
+        "mae": 1.6229151807908813,
+        "bias": -0.07879011467341049,
+        "r2": 0.691998194920795,
+        "sign_accuracy": 0.9148970398970399
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.9496690080687564,
+        "mae": 1.5709381190235283,
+        "bias": 0.3656807700357492,
+        "r2": 0.7043110457051929,
+        "sign_accuracy": 0.9161220043572985
+      }
+    }
+  },
+  {
+    "run_id": "weather-boosting-L60-s43",
+    "model": "boosting",
+    "direct": false,
+    "seed": 43,
+    "config": {},
+    "length_days": 60,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 2.8787063999989186,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.2575881881843283,
+        "mae": 1.6836156251994752,
+        "bias": -0.2502073404757445,
+        "r2": 0.6482605892921705,
+        "sign_accuracy": 0.9185667752442996
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.167566545712712,
+        "mae": 1.6229151807908813,
+        "bias": -0.07879011467341049,
+        "r2": 0.691998194920795,
+        "sign_accuracy": 0.9148970398970399
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.9496690080687564,
+        "mae": 1.5709381190235283,
+        "bias": 0.3656807700357492,
+        "r2": 0.7043110457051929,
+        "sign_accuracy": 0.9161220043572985
+      }
+    }
+  },
+  {
+    "run_id": "weather-lstm-L60-s17",
+    "model": "lstm",
+    "direct": false,
+    "seed": 17,
+    "config": {},
+    "length_days": 60,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 5.9145720999949845,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.619514582928721,
+        "validation_mse_scaled": 0.34478864073753357
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.3530641171322633,
+        "validation_mse_scaled": 0.23497413098812103
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.3006008740965368,
+        "validation_mse_scaled": 0.2438809722661972
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.26136312249375493,
+        "validation_mse_scaled": 0.23895171284675598
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.23364445007645065,
+        "validation_mse_scaled": 0.20070302486419678
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.21744857272398663,
+        "validation_mse_scaled": 0.19385060667991638
+      },
+      {
+        "epoch": 7,
+        "train_mse_scaled": 0.20748875704076555,
+        "validation_mse_scaled": 0.19399182498455048
+      },
+      {
+        "epoch": 8,
+        "train_mse_scaled": 0.20094171202118757,
+        "validation_mse_scaled": 0.18506641685962677
+      },
+      {
+        "epoch": 9,
+        "train_mse_scaled": 0.19151146863793006,
+        "validation_mse_scaled": 0.18405529856681824
+      },
+      {
+        "epoch": 10,
+        "train_mse_scaled": 0.18568403940710929,
+        "validation_mse_scaled": 0.18222907185554504
+      },
+      {
+        "epoch": 11,
+        "train_mse_scaled": 0.18114034064000226,
+        "validation_mse_scaled": 0.17176958918571472
+      },
+      {
+        "epoch": 12,
+        "train_mse_scaled": 0.1793181441542729,
+        "validation_mse_scaled": 0.1795448511838913
+      },
+      {
+        "epoch": 13,
+        "train_mse_scaled": 0.17629923829358748,
+        "validation_mse_scaled": 0.18024581670761108
+      },
+      {
+        "epoch": 14,
+        "train_mse_scaled": 0.17388735104695374,
+        "validation_mse_scaled": 0.1809009611606598
+      },
+      {
+        "epoch": 15,
+        "train_mse_scaled": 0.17224570093249447,
+        "validation_mse_scaled": 0.18386825919151306
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.2929739952087402,
+        "mae": 1.7452664375305176,
+        "bias": -0.23217280209064484,
+        "r2": 0.6371477246284485,
+        "sign_accuracy": 0.8995656894679696
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.0960700511932373,
+        "mae": 1.524803638458252,
+        "bias": -0.3407980501651764,
+        "r2": 0.7119817733764648,
+        "sign_accuracy": 0.9128056628056628
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.7194541692733765,
+        "mae": 1.3036789894104004,
+        "bias": 0.03618423268198967,
+        "r2": 0.7700176239013672,
+        "sign_accuracy": 0.9259259259259259
+      }
+    }
+  },
+  {
+    "run_id": "weather-lstm-L60-s29",
+    "model": "lstm",
+    "direct": false,
+    "seed": 29,
+    "config": {},
+    "length_days": 60,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 7.166676900000311,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.7245982190342493,
+        "validation_mse_scaled": 0.38753101229667664
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.37390657363229424,
+        "validation_mse_scaled": 0.28768840432167053
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.28397835075288996,
+        "validation_mse_scaled": 0.21970964968204498
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.23485686145922902,
+        "validation_mse_scaled": 0.2056846022605896
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.2183195521938855,
+        "validation_mse_scaled": 0.1944170743227005
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.2090831403764798,
+        "validation_mse_scaled": 0.19144512712955475
+      },
+      {
+        "epoch": 7,
+        "train_mse_scaled": 0.2030107992055346,
+        "validation_mse_scaled": 0.18755283951759338
+      },
+      {
+        "epoch": 8,
+        "train_mse_scaled": 0.1979708842985495,
+        "validation_mse_scaled": 0.18411016464233398
+      },
+      {
+        "epoch": 9,
+        "train_mse_scaled": 0.19229604702062816,
+        "validation_mse_scaled": 0.17829543352127075
+      },
+      {
+        "epoch": 10,
+        "train_mse_scaled": 0.1981057060412364,
+        "validation_mse_scaled": 0.177300363779068
+      },
+      {
+        "epoch": 11,
+        "train_mse_scaled": 0.18742564129760472,
+        "validation_mse_scaled": 0.17584770917892456
+      },
+      {
+        "epoch": 12,
+        "train_mse_scaled": 0.18359710639269575,
+        "validation_mse_scaled": 0.17293743789196014
+      },
+      {
+        "epoch": 13,
+        "train_mse_scaled": 0.18239362151329302,
+        "validation_mse_scaled": 0.17882026731967926
+      },
+      {
+        "epoch": 14,
+        "train_mse_scaled": 0.17909219865339052,
+        "validation_mse_scaled": 0.1714838296175003
+      },
+      {
+        "epoch": 15,
+        "train_mse_scaled": 0.1794643051451467,
+        "validation_mse_scaled": 0.17149384319782257
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.0625410079956055,
+        "mae": 1.5912754535675049,
+        "bias": 0.1277148425579071,
+        "r2": 0.7064130306243896,
+        "sign_accuracy": 0.9109663409337676
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.374305248260498,
+        "mae": 1.6411336660385132,
+        "bias": -0.15890257060527802,
+        "r2": 0.6304429769515991,
+        "sign_accuracy": 0.8988095238095238
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.648824691772461,
+        "mae": 1.274776816368103,
+        "bias": 0.11194071918725967,
+        "r2": 0.7885234355926514,
+        "sign_accuracy": 0.9210239651416122
+      }
+    }
+  },
+  {
+    "run_id": "weather-lstm-L60-s43",
+    "model": "lstm",
+    "direct": false,
+    "seed": 43,
+    "config": {},
+    "length_days": 60,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 9.488910400003078,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.6230771831986531,
+        "validation_mse_scaled": 0.2843753695487976
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.3533907436059064,
+        "validation_mse_scaled": 0.2576444149017334
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.3182699269053858,
+        "validation_mse_scaled": 0.2301565557718277
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.27810134140729215,
+        "validation_mse_scaled": 0.20520013570785522
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.24223909951447947,
+        "validation_mse_scaled": 0.20527291297912598
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.22519960982254938,
+        "validation_mse_scaled": 0.18994255363941193
+      },
+      {
+        "epoch": 7,
+        "train_mse_scaled": 0.21880345144384117,
+        "validation_mse_scaled": 0.1929764598608017
+      },
+      {
+        "epoch": 8,
+        "train_mse_scaled": 0.20982811814470265,
+        "validation_mse_scaled": 0.18765603005886078
+      },
+      {
+        "epoch": 9,
+        "train_mse_scaled": 0.20240338337490352,
+        "validation_mse_scaled": 0.18891869485378265
+      },
+      {
+        "epoch": 10,
+        "train_mse_scaled": 0.19547141174401492,
+        "validation_mse_scaled": 0.18926051259040833
+      },
+      {
+        "epoch": 11,
+        "train_mse_scaled": 0.1968030975727639,
+        "validation_mse_scaled": 0.17794527113437653
+      },
+      {
+        "epoch": 12,
+        "train_mse_scaled": 0.1895537836240964,
+        "validation_mse_scaled": 0.17908622324466705
+      },
+      {
+        "epoch": 13,
+        "train_mse_scaled": 0.18827283734479555,
+        "validation_mse_scaled": 0.1760973036289215
+      },
+      {
+        "epoch": 14,
+        "train_mse_scaled": 0.1853208471211162,
+        "validation_mse_scaled": 0.17771831154823303
+      },
+      {
+        "epoch": 15,
+        "train_mse_scaled": 0.18409302645431772,
+        "validation_mse_scaled": 0.17311067879199982
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.1337978839874268,
+        "mae": 1.6283583641052246,
+        "bias": -0.020079273730516434,
+        "r2": 0.685776948928833,
+        "sign_accuracy": 0.9066232356134636
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.2453908920288086,
+        "mae": 1.579611897468567,
+        "bias": -0.2908340394496918,
+        "r2": 0.6694841980934143,
+        "sign_accuracy": 0.9044401544401545
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.6245090961456299,
+        "mae": 1.2704163789749146,
+        "bias": -0.1147880107164383,
+        "r2": 0.7947148084640503,
+        "sign_accuracy": 0.923202614379085
+      }
+    }
+  },
+  {
+    "run_id": "direct-rf-L24-s17",
+    "model": "rf",
+    "direct": true,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 18.423872900006245,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.5452253564959006,
+        "mae": 1.843502661581483,
+        "bias": -0.3134960205014437,
+        "r2": 0.552921211194063,
+        "sign_accuracy": 0.8963083604777415
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.360418368234164,
+        "mae": 1.7135583372656835,
+        "bias": -0.3100820510064553,
+        "r2": 0.6347532553206359,
+        "sign_accuracy": 0.8978442728442728
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0614982063084804,
+        "mae": 1.6192103907089521,
+        "bias": 0.36042737262940044,
+        "r2": 0.6694179659495788,
+        "sign_accuracy": 0.9128540305010894
+      }
+    }
+  },
+  {
+    "run_id": "direct-rf-L24-s29",
+    "model": "rf",
+    "direct": true,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 19.605133700002625,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.558060320336541,
+        "mae": 1.8541406939358853,
+        "bias": -0.3016188465776312,
+        "r2": 0.5484008190323355,
+        "sign_accuracy": 0.8990228013029316
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.356799163948341,
+        "mae": 1.7110974667566587,
+        "bias": -0.3174059592483179,
+        "r2": 0.6358724545032406,
+        "sign_accuracy": 0.8988095238095238
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.094783034446789,
+        "mae": 1.6426440841767833,
+        "bias": 0.4050062033915793,
+        "r2": 0.6586566701066288,
+        "sign_accuracy": 0.909041394335512
+      }
+    }
+  },
+  {
+    "run_id": "direct-rf-L24-s43",
+    "model": "rf",
+    "direct": true,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 17.85125429999607,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.573270883646069,
+        "mae": 1.8516829406259365,
+        "bias": -0.31292233763654104,
+        "r2": 0.5430143157520548,
+        "sign_accuracy": 0.8973941368078175
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.362480606855736,
+        "mae": 1.7135196838716098,
+        "bias": -0.28977595417959334,
+        "r2": 0.6341147625934338,
+        "sign_accuracy": 0.8972007722007722
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0656995442728094,
+        "mae": 1.6246891085501818,
+        "bias": 0.39049897823200397,
+        "r2": 0.6680691390401176,
+        "sign_accuracy": 0.9123093681917211
+      }
+    }
+  },
+  {
+    "run_id": "direct-boosting-L24-s17",
+    "model": "boosting",
+    "direct": true,
+    "seed": 17,
+    "config": {},
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.5149262999984785,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.416066369012027,
+        "mae": 1.8113427571657146,
+        "bias": -0.381797823867194,
+        "r2": 0.5971444941359662,
+        "sign_accuracy": 0.9098805646036916
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.412198101503857,
+        "mae": 1.7743696042771415,
+        "bias": -0.2593725608526541,
+        "r2": 0.6185528930110716,
+        "sign_accuracy": 0.8944658944658944
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0307339206221386,
+        "mae": 1.6220807048099015,
+        "bias": 0.3463275907172416,
+        "r2": 0.6792110711818513,
+        "sign_accuracy": 0.9123093681917211
+      }
+    }
+  },
+  {
+    "run_id": "direct-boosting-L24-s29",
+    "model": "boosting",
+    "direct": true,
+    "seed": 29,
+    "config": {},
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.5291474999976344,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.416066369012027,
+        "mae": 1.8113427571657146,
+        "bias": -0.381797823867194,
+        "r2": 0.5971444941359662,
+        "sign_accuracy": 0.9098805646036916
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.412198101503857,
+        "mae": 1.7743696042771415,
+        "bias": -0.2593725608526541,
+        "r2": 0.6185528930110716,
+        "sign_accuracy": 0.8944658944658944
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0307339206221386,
+        "mae": 1.6220807048099015,
+        "bias": 0.3463275907172416,
+        "r2": 0.6792110711818513,
+        "sign_accuracy": 0.9123093681917211
+      }
+    }
+  },
+  {
+    "run_id": "direct-boosting-L24-s43",
+    "model": "boosting",
+    "direct": true,
+    "seed": 43,
+    "config": {},
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 0.49960899999859976,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.416066369012027,
+        "mae": 1.8113427571657146,
+        "bias": -0.381797823867194,
+        "r2": 0.5971444941359662,
+        "sign_accuracy": 0.9098805646036916
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.412198101503857,
+        "mae": 1.7743696042771415,
+        "bias": -0.2593725608526541,
+        "r2": 0.6185528930110716,
+        "sign_accuracy": 0.8944658944658944
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0307339206221386,
+        "mae": 1.6220807048099015,
+        "bias": 0.3463275907172416,
+        "r2": 0.6792110711818513,
+        "sign_accuracy": 0.9123093681917211
+      }
+    }
+  },
+  {
+    "run_id": "direct-lstm-L24-s17",
+    "model": "lstm",
+    "direct": true,
+    "seed": 17,
+    "config": {},
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 3.838699500003713,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.6641712030292001,
+        "validation_mse_scaled": 0.40792128443717957
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.40037941167001045,
+        "validation_mse_scaled": 0.36421552300453186
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.3202072591611247,
+        "validation_mse_scaled": 0.3371149003505707
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.27214089823822896,
+        "validation_mse_scaled": 0.33869147300720215
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.24795183000831456,
+        "validation_mse_scaled": 0.294832319021225
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.23361778851384615,
+        "validation_mse_scaled": 0.28168195486068726
+      },
+      {
+        "epoch": 7,
+        "train_mse_scaled": 0.22422505131022885,
+        "validation_mse_scaled": 0.30387890338897705
+      },
+      {
+        "epoch": 8,
+        "train_mse_scaled": 0.22109229779597994,
+        "validation_mse_scaled": 0.3318912982940674
+      },
+      {
+        "epoch": 9,
+        "train_mse_scaled": 0.2107986275234384,
+        "validation_mse_scaled": 0.2802606523036957
+      },
+      {
+        "epoch": 10,
+        "train_mse_scaled": 0.2047546080435568,
+        "validation_mse_scaled": 0.28995177149772644
+      },
+      {
+        "epoch": 11,
+        "train_mse_scaled": 0.20046621444106152,
+        "validation_mse_scaled": 0.28860440850257874
+      },
+      {
+        "epoch": 12,
+        "train_mse_scaled": 0.1952394108322227,
+        "validation_mse_scaled": 0.2954444885253906
+      },
+      {
+        "epoch": 13,
+        "train_mse_scaled": 0.19433150176098898,
+        "validation_mse_scaled": 0.3082024157047272
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.1486704349517822,
+        "mae": 1.6547365188598633,
+        "bias": -0.0013227763120085,
+        "r2": 0.681381344795227,
+        "sign_accuracy": 0.9109663409337676
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.663872480392456,
+        "mae": 1.7717229127883911,
+        "bias": -0.44580185413360596,
+        "r2": 0.5348047614097595,
+        "sign_accuracy": 0.885939510939511
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.919967770576477,
+        "mae": 1.4621018171310425,
+        "bias": 0.08248608559370041,
+        "r2": 0.7132514715194702,
+        "sign_accuracy": 0.9133986928104575
+      }
+    }
+  },
+  {
+    "run_id": "direct-lstm-L24-s29",
+    "model": "lstm",
+    "direct": true,
+    "seed": 29,
+    "config": {},
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 3.534366100000625,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.6382402216462447,
+        "validation_mse_scaled": 0.45397743582725525
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.42079782906961266,
+        "validation_mse_scaled": 0.41780784726142883
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.35480807597900116,
+        "validation_mse_scaled": 0.38541465997695923
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.30406189854851146,
+        "validation_mse_scaled": 0.32361671328544617
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.26870443171851155,
+        "validation_mse_scaled": 0.32919949293136597
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.23564961532924059,
+        "validation_mse_scaled": 0.3270657956600189
+      },
+      {
+        "epoch": 7,
+        "train_mse_scaled": 0.2165632600665634,
+        "validation_mse_scaled": 0.34180694818496704
+      },
+      {
+        "epoch": 8,
+        "train_mse_scaled": 0.20422905145573841,
+        "validation_mse_scaled": 0.2981722354888916
+      },
+      {
+        "epoch": 9,
+        "train_mse_scaled": 0.19914708381002474,
+        "validation_mse_scaled": 0.30941668152809143
+      },
+      {
+        "epoch": 10,
+        "train_mse_scaled": 0.19525313284440457,
+        "validation_mse_scaled": 0.3243353068828583
+      },
+      {
+        "epoch": 11,
+        "train_mse_scaled": 0.18988871170636398,
+        "validation_mse_scaled": 0.3370653986930847
+      },
+      {
+        "epoch": 12,
+        "train_mse_scaled": 0.1863702707414241,
+        "validation_mse_scaled": 0.3456495404243469
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.1454808712005615,
+        "mae": 1.6209566593170166,
+        "bias": 0.2554028034210205,
+        "r2": 0.68232661485672,
+        "sign_accuracy": 0.9044516829533116
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.2627439498901367,
+        "mae": 1.57798171043396,
+        "bias": -0.3215092718601227,
+        "r2": 0.6643557548522949,
+        "sign_accuracy": 0.9042792792792793
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.9803705215454102,
+        "mae": 1.4915300607681274,
+        "bias": 0.16745847463607788,
+        "r2": 0.6949253082275391,
+        "sign_accuracy": 0.9150326797385621
+      }
+    }
+  },
+  {
+    "run_id": "direct-lstm-L24-s43",
+    "model": "lstm",
+    "direct": true,
+    "seed": 43,
+    "config": {},
+    "length_days": 24,
+    "features": 4,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 2.984492900002806,
+    "history": [
+      {
+        "epoch": 1,
+        "train_mse_scaled": 0.656308967569356,
+        "validation_mse_scaled": 0.41033387184143066
+      },
+      {
+        "epoch": 2,
+        "train_mse_scaled": 0.40368439225754627,
+        "validation_mse_scaled": 0.3804336488246918
+      },
+      {
+        "epoch": 3,
+        "train_mse_scaled": 0.3216140875019647,
+        "validation_mse_scaled": 0.355258047580719
+      },
+      {
+        "epoch": 4,
+        "train_mse_scaled": 0.2742203359808719,
+        "validation_mse_scaled": 0.3111431896686554
+      },
+      {
+        "epoch": 5,
+        "train_mse_scaled": 0.24390727348044017,
+        "validation_mse_scaled": 0.30770760774612427
+      },
+      {
+        "epoch": 6,
+        "train_mse_scaled": 0.2182072089851912,
+        "validation_mse_scaled": 0.26520299911499023
+      },
+      {
+        "epoch": 7,
+        "train_mse_scaled": 0.21891659521603574,
+        "validation_mse_scaled": 0.3006364405155182
+      },
+      {
+        "epoch": 8,
+        "train_mse_scaled": 0.20199296161538557,
+        "validation_mse_scaled": 0.3154567778110504
+      },
+      {
+        "epoch": 9,
+        "train_mse_scaled": 0.1939458508153732,
+        "validation_mse_scaled": 0.2791520655155182
+      },
+      {
+        "epoch": 10,
+        "train_mse_scaled": 0.1888218102734328,
+        "validation_mse_scaled": 0.29740065336227417
+      }
+    ],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.1494128704071045,
+        "mae": 1.6472963094711304,
+        "bias": 0.1006694883108139,
+        "r2": 0.6811611652374268,
+        "sign_accuracy": 0.9163952225841476
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.5916945934295654,
+        "mae": 1.7195847034454346,
+        "bias": -0.4649103283882141,
+        "r2": 0.5596722364425659,
+        "sign_accuracy": 0.8886743886743886
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.8676784038543701,
+        "mae": 1.449013113975525,
+        "bias": 0.0005106874159537256,
+        "r2": 0.7286577224731445,
+        "sign_accuracy": 0.9128540305010894
+      }
+    }
+  },
+  {
+    "run_id": "ablation-calendar-rf-L24-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 6,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 21.29630410000391,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.2567537489340235,
+        "mae": 1.6803724213453262,
+        "bias": -0.21689377648209415,
+        "r2": 0.6485205578105222,
+        "sign_accuracy": 0.9077090119435396
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.2598189896939336,
+        "mae": 1.5916310232007904,
+        "bias": -0.01771661297878761,
+        "r2": 0.6652229405698628,
+        "sign_accuracy": 0.9132882882882883
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.8110934673443917,
+        "mae": 1.4507958036487136,
+        "bias": -0.093577350919964,
+        "r2": 0.7448503052278197,
+        "sign_accuracy": 0.9112200435729847
+      }
+    }
+  },
+  {
+    "run_id": "ablation-calendar-rf-L24-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 6,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 19.90278060000128,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.29829581708185,
+        "mae": 1.6965918968380902,
+        "bias": -0.255935030763964,
+        "r2": 0.63546147113768,
+        "sign_accuracy": 0.9082519001085776
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.22129032590537,
+        "mae": 1.5767312383671208,
+        "bias": -0.03408128199618926,
+        "r2": 0.6765411537287083,
+        "sign_accuracy": 0.916023166023166
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.8227254962826345,
+        "mae": 1.4466224907323055,
+        "bias": -0.06500506542479886,
+        "r2": 0.7415623031298398,
+        "sign_accuracy": 0.906318082788671
+      }
+    }
+  },
+  {
+    "run_id": "ablation-calendar-rf-L24-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 6,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 20.192815399997926,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.2992995962357985,
+        "mae": 1.692844765277428,
+        "bias": -0.24882025280060877,
+        "r2": 0.6351429776868502,
+        "sign_accuracy": 0.9066232356134636
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.2106176924060406,
+        "mae": 1.5734206144756178,
+        "bias": -0.03951616428322064,
+        "r2": 0.6796419320350935,
+        "sign_accuracy": 0.9157014157014157
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.8097018173253174,
+        "mae": 1.4494951494840291,
+        "bias": -0.07431420203677085,
+        "r2": 0.7452422702611505,
+        "sign_accuracy": 0.9101307189542484
+      }
+    }
+  },
+  {
+    "run_id": "ablation-rain-rf-L24-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 6,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 21.71908059999987,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.5701183876530265,
+        "mae": 1.9073414849543686,
+        "bias": -0.3861915195313921,
+        "r2": 0.5441333297550348,
+        "sign_accuracy": 0.8919652551574375
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.313541594801558,
+        "mae": 1.7027111017424572,
+        "bias": -0.26945934878367633,
+        "r2": 0.6491164511552812,
+        "sign_accuracy": 0.9083011583011583
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0981953166215725,
+        "mae": 1.6247463920662568,
+        "bias": 0.2390614290897634,
+        "r2": 0.65754370670704,
+        "sign_accuracy": 0.906318082788671
+      }
+    }
+  },
+  {
+    "run_id": "ablation-rain-rf-L24-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 6,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 23.4825794999997,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.5617527120360295,
+        "mae": 1.8960538121749626,
+        "bias": -0.3782904206032079,
+        "r2": 0.5470961707379869,
+        "sign_accuracy": 0.8935939196525515
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.319009299447599,
+        "mae": 1.7107832316987115,
+        "bias": -0.2897040902510557,
+        "r2": 0.6474559712321556,
+        "sign_accuracy": 0.9105534105534105
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.076600559686864,
+        "mae": 1.6235568343260103,
+        "bias": 0.24967252091805062,
+        "r2": 0.6645565945117669,
+        "sign_accuracy": 0.9095860566448801
+      }
+    }
+  },
+  {
+    "run_id": "ablation-rain-rf-L24-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 6,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 24.154745200001344,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.5607370110405903,
+        "mae": 1.8969512252620144,
+        "bias": -0.3609578701232499,
+        "r2": 0.5474552402712478,
+        "sign_accuracy": 0.8935939196525515
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.34403294360684,
+        "mae": 1.7187345775585845,
+        "bias": -0.2759101927719775,
+        "r2": 0.6398065550850036,
+        "sign_accuracy": 0.9063706563706564
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0926321672615957,
+        "mae": 1.6215453334145713,
+        "bias": 0.24247489122387367,
+        "r2": 0.659357274641565,
+        "sign_accuracy": 0.9052287581699346
+      }
+    }
+  },
+  {
+    "run_id": "ablation-vpd-rf-L24-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 5,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 20.004956600001606,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.3665743069313985,
+        "mae": 1.7825586836213725,
+        "bias": -0.27359193443364527,
+        "r2": 0.6134800864225479,
+        "sign_accuracy": 0.9033659066232356
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.407165630517075,
+        "mae": 1.7648343850067043,
+        "bias": -0.277402082025504,
+        "r2": 0.6201428280031527,
+        "sign_accuracy": 0.8997747747747747
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.04163570518966,
+        "mae": 1.6004045294700524,
+        "bias": 0.28836377632331095,
+        "r2": 0.675757581918528,
+        "sign_accuracy": 0.9150326797385621
+      }
+    }
+  },
+  {
+    "run_id": "ablation-vpd-rf-L24-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 5,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 19.966916700002912,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.419144279032505,
+        "mae": 1.8149827573767061,
+        "bias": -0.30313587761154925,
+        "r2": 0.5961174173771517,
+        "sign_accuracy": 0.9011943539630836
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.4406416156828694,
+        "mae": 1.7833148412325077,
+        "bias": -0.27277424507680825,
+        "r2": 0.6095041639981124,
+        "sign_accuracy": 0.8992921492921493
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0242674382616554,
+        "mae": 1.5854478640168688,
+        "bias": 0.26911037355157114,
+        "r2": 0.6812507999740844,
+        "sign_accuracy": 0.9112200435729847
+      }
+    }
+  },
+  {
+    "run_id": "ablation-vpd-rf-L24-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 5,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 20.49589289999858,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 2.427990584555847,
+        "mae": 1.8266746715420847,
+        "bias": -0.30536186187118425,
+        "r2": 0.5931581880579905,
+        "sign_accuracy": 0.8995656894679696
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 2.4393998778341315,
+        "mae": 1.7813887570184928,
+        "bias": -0.2684871862614243,
+        "r2": 0.6099014120867685,
+        "sign_accuracy": 0.8968790218790219
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 2.0410402856834935,
+        "mae": 1.5918294561107407,
+        "bias": 0.2830722672459323,
+        "r2": 0.6759466774638913,
+        "sign_accuracy": 0.906318082788671
+      }
+    }
+  },
+  {
+    "run_id": "ablation-state-rf-L24-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 8,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 33.62155110000458,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 1.8827244008638007,
+        "mae": 1.1732116318315835,
+        "bias": -0.31887546927528615,
+        "r2": 0.7553726076692343,
+        "sign_accuracy": 0.9196525515743756
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 1.8998640288786122,
+        "mae": 1.1288254724750229,
+        "bias": -0.34812878275925707,
+        "r2": 0.7633789250549134,
+        "sign_accuracy": 0.9264800514800515
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.2524835195295887,
+        "mae": 0.8530541978416092,
+        "bias": 0.0874039604567049,
+        "r2": 0.8779725980137836,
+        "sign_accuracy": 0.9482570806100218
+      }
+    }
+  },
+  {
+    "run_id": "ablation-state-rf-L24-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 8,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 32.24536800000351,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 1.8760037040440003,
+        "mae": 1.171467762319632,
+        "bias": -0.32866008354599624,
+        "r2": 0.7571159665516191,
+        "sign_accuracy": 0.9158523344191096
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 1.8948464892797343,
+        "mae": 1.1285443103313557,
+        "bias": -0.34395596123399913,
+        "r2": 0.7646271068456229,
+        "sign_accuracy": 0.9242277992277992
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.2759764299279934,
+        "mae": 0.8565480757242614,
+        "bias": 0.1195217090304183,
+        "r2": 0.8733519144691098,
+        "sign_accuracy": 0.9477124183006536
+      }
+    }
+  },
+  {
+    "run_id": "ablation-state-rf-L24-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 8,
+    "train_n": 19368,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 30.426136699999915,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "calibration": {
+        "n": 1842,
+        "rmse": 1.8851528156097135,
+        "mae": 1.1822509328151498,
+        "bias": -0.33251186208318656,
+        "r2": 0.7547411399027945,
+        "sign_accuracy": 0.9158523344191096
+      },
+      "test": {
+        "n": 6216,
+        "rmse": 1.886301279431932,
+        "mae": 1.1324984322344356,
+        "bias": -0.33677859249538306,
+        "r2": 0.7667452473502104,
+        "sign_accuracy": 0.9234234234234234
+      },
+      "validation": {
+        "n": 1836,
+        "rmse": 1.260658090298313,
+        "mae": 0.8539290114907033,
+        "bias": 0.11141273609923061,
+        "r2": 0.8763745300559483,
+        "sign_accuracy": 0.9433551198257081
+      }
+    }
+  },
+  {
+    "run_id": "spatial-x1180_y0-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.900632899996708,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 2.627073663999403,
+        "mae": 2.0743933850151417,
+        "bias": 2.017986983433298,
+        "r2": 0.398243741394951,
+        "sign_accuracy": 0.8300653594771242
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x1180_y0-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 12.099232599997777,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 2.6318340984640796,
+        "mae": 2.0804357435197645,
+        "bias": 2.016942893187954,
+        "r2": 0.39606091971360924,
+        "sign_accuracy": 0.8366013071895425
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x1180_y0-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.490301199999521,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 2.6067282578661466,
+        "mae": 2.0606544719664543,
+        "bias": 2.00410618403633,
+        "r2": 0.40752826790087604,
+        "sign_accuracy": 0.8366013071895425
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x1180_y0-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.560069599996496,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.363321999535279,
+        "mae": 1.9499314481631955,
+        "bias": 1.4306172047338181,
+        "r2": 0.4845448219748759,
+        "sign_accuracy": 0.8648648648648649
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x1180_y0-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.776710999998613,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.375780658354467,
+        "mae": 1.9612020668625354,
+        "bias": 1.4475565781110533,
+        "r2": 0.4790958757674304,
+        "sign_accuracy": 0.8638996138996139
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x1180_y0-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.640699499999755,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.3705514263988943,
+        "mae": 1.9549854789631855,
+        "bias": 1.4522263047766513,
+        "r2": 0.4813864329531916,
+        "sign_accuracy": 0.8677606177606177
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x1283_y0-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.438460999997915,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 1.9115549162618979,
+        "mae": 1.4221615134987446,
+        "bias": 0.5102897607646255,
+        "r2": 0.7310711815538318,
+        "sign_accuracy": 0.9150326797385621
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x1283_y0-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.314727299999504,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 1.9738737263932682,
+        "mae": 1.4404048336194428,
+        "bias": 0.5327500409663501,
+        "r2": 0.7132505998856655,
+        "sign_accuracy": 0.9150326797385621
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x1283_y0-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.895892299995467,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 1.941521844439829,
+        "mae": 1.4476667020030347,
+        "bias": 0.5696180000059977,
+        "r2": 0.7225732412992616,
+        "sign_accuracy": 0.9215686274509803
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x1283_y0-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.265687799997977,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.032556871818486,
+        "mae": 1.3245346823576893,
+        "bias": -0.18939190401602304,
+        "r2": 0.7076227084959386,
+        "sign_accuracy": 0.9208494208494209
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x1283_y0-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.850697499998205,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.0706918925852453,
+        "mae": 1.342176660619009,
+        "bias": -0.1944730057545722,
+        "r2": 0.6965485671886373,
+        "sign_accuracy": 0.9198841698841699
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x1283_y0-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.407478799999808,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.0134677520252464,
+        "mae": 1.324637078555389,
+        "bias": -0.1930385928017757,
+        "r2": 0.713088746553211,
+        "sign_accuracy": 0.9295366795366795
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x2827_y0-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.315677799997502,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 2.0334846073824924,
+        "mae": 1.6823343150829966,
+        "bias": -0.9787009354714397,
+        "r2": 0.6612435305863315,
+        "sign_accuracy": 0.9509803921568627
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x2827_y0-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.54858420000528,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 2.0550905560971997,
+        "mae": 1.7150534543428722,
+        "bias": -0.9659723267943161,
+        "r2": 0.6540066543364136,
+        "sign_accuracy": 0.9509803921568627
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x2827_y0-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.919769600004656,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 2.0588475069632484,
+        "mae": 1.703014740738973,
+        "bias": -0.9721622678822988,
+        "r2": 0.6527404637408849,
+        "sign_accuracy": 0.9477124183006536
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x2827_y0-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.350260700004583,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.7384186277074796,
+        "mae": 2.064413540885491,
+        "bias": -1.5224441309909782,
+        "r2": 0.48496922019662425,
+        "sign_accuracy": 0.9015444015444015
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x2827_y0-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.734368899997207,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.7825742227071375,
+        "mae": 2.0710862754450847,
+        "bias": -1.5374415546416362,
+        "r2": 0.4682260986554324,
+        "sign_accuracy": 0.9015444015444015
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x2827_y0-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2888_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.352925800005323,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.754151211840893,
+        "mae": 2.070052237612968,
+        "bias": -1.5255493354557759,
+        "r2": 0.47903437829107665,
+        "sign_accuracy": 0.9025096525096525
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x2888_y0-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.620088499999838,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 1.7928024679318761,
+        "mae": 1.4987034687842535,
+        "bias": -0.9553451504281205,
+        "r2": 0.6906846037199355,
+        "sign_accuracy": 0.9607843137254902
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x2888_y0-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.249959900000249,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 1.7861156928667967,
+        "mae": 1.4943668141211839,
+        "bias": -0.9789631811093771,
+        "r2": 0.6929876631062553,
+        "sign_accuracy": 0.9444444444444444
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x2888_y0-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.863891399996646,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 1.823228322178982,
+        "mae": 1.5148197508957166,
+        "bias": -0.9640390910780722,
+        "r2": 0.6800966616801701,
+        "sign_accuracy": 0.9607843137254902
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x2888_y0-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.427899999995134,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.676691229412041,
+        "mae": 1.983766967937791,
+        "bias": -1.3571784868596088,
+        "r2": 0.5535751282931762,
+        "sign_accuracy": 0.9111969111969112
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x2888_y0-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.476878800000122,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.685570745945768,
+        "mae": 1.9702899876297904,
+        "bias": -1.3442296877937667,
+        "r2": 0.5506083220877468,
+        "sign_accuracy": 0.9073359073359073
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x2888_y0-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2989_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.598450299999968,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.6411519336867566,
+        "mae": 1.9570975260179873,
+        "bias": -1.3395158465993229,
+        "r2": 0.5653510842488585,
+        "sign_accuracy": 0.915057915057915
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x2989_y0-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.808109600002354,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 1.7891024976483076,
+        "mae": 1.478692745454801,
+        "bias": -0.9602739790634802,
+        "r2": 0.685344181440052,
+        "sign_accuracy": 0.9607843137254902
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x2989_y0-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.431024799996521,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 1.7983015620067058,
+        "mae": 1.4977482685752732,
+        "bias": -0.9678024043259276,
+        "r2": 0.682100118470421,
+        "sign_accuracy": 0.9575163398692811
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x2989_y0-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.28074370000104,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 1.7736999941395124,
+        "mae": 1.480109501734491,
+        "bias": -0.9468909417436492,
+        "r2": 0.6907386465288907,
+        "sign_accuracy": 0.9640522875816994
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x2989_y0-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.993133700001636,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.7064962051420363,
+        "mae": 1.999987079343891,
+        "bias": -1.3932122177388913,
+        "r2": 0.5444227071399442,
+        "sign_accuracy": 0.9092664092664092
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x2989_y0-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.516171999996004,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.6998852886701172,
+        "mae": 1.9917426772199296,
+        "bias": -1.364122533561515,
+        "r2": 0.5466455849084303,
+        "sign_accuracy": 0.9140926640926641
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x2989_y0-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x3749_y0"
+    ],
+    "elapsed_seconds": 11.427056000000448,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.6974120734623135,
+        "mae": 1.9897994098860023,
+        "bias": -1.3765949821390724,
+        "r2": 0.5474757901651843,
+        "sign_accuracy": 0.9121621621621622
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x3749_y0-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0"
+    ],
+    "elapsed_seconds": 11.789980699999433,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 2.5599726338462707,
+        "mae": 2.0220313655301796,
+        "bias": 1.9633551883180946,
+        "r2": 0.4358677497522524,
+        "sign_accuracy": 0.8431372549019608
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x3749_y0-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0"
+    ],
+    "elapsed_seconds": 12.414629899998545,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 2.6223703564297396,
+        "mae": 2.0717676682477264,
+        "bias": 2.0140834696916174,
+        "r2": 0.4080318557063861,
+        "sign_accuracy": 0.8333333333333334
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "spatial-x3749_y0-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0"
+    ],
+    "elapsed_seconds": 11.399747700001171,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "validation": {
+        "n": 306,
+        "rmse": 2.56223874315395,
+        "mae": 2.026255690849494,
+        "bias": 1.975043102525513,
+        "r2": 0.4348685584758548,
+        "sign_accuracy": 0.8431372549019608
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x3749_y0-s17",
+    "model": "rf",
+    "direct": false,
+    "seed": 17,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0"
+    ],
+    "elapsed_seconds": 11.348202199995285,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.4127621802879453,
+        "mae": 1.9441271504032396,
+        "bias": 1.4603622569161088,
+        "r2": 0.5306991352896844,
+        "sign_accuracy": 0.8745173745173745
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x3749_y0-s29",
+    "model": "rf",
+    "direct": false,
+    "seed": 29,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0"
+    ],
+    "elapsed_seconds": 11.730270899999596,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.422241747698254,
+        "mae": 1.9495244402137017,
+        "bias": 1.4492170573159406,
+        "r2": 0.52700419289984,
+        "sign_accuracy": 0.8774131274131274
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  },
+  {
+    "run_id": "joint-x3749_y0-s43",
+    "model": "rf",
+    "direct": false,
+    "seed": 43,
+    "config": {
+      "leaf": 3
+    },
+    "length_days": 24,
+    "features": 4,
+    "train_n": 16140,
+    "train_first": "2006-03-01 00:00:00",
+    "train_last": "2014-12-31 00:00:00",
+    "train_cells": [
+      "x1180_y0",
+      "x1283_y0",
+      "x2827_y0",
+      "x2888_y0",
+      "x2989_y0"
+    ],
+    "elapsed_seconds": 11.893578900002467,
+    "history": [],
+    "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch_threads": 4,
+    "python": "3.12.5",
+    "peak_memory_note": "Process peak recorded at programme end; not isolated per-model peak.",
+    "scores": {
+      "test": {
+        "n": 1036,
+        "rmse": 2.435108583491023,
+        "mae": 1.956185002657806,
+        "bias": 1.4684345216085175,
+        "r2": 0.5219657828787332,
+        "sign_accuracy": 0.8745173745173745
+      }
+    },
+    "transfer_selection_note": "Rolling hyperparameter selection excludes held cell entirely; nested pre-test group isolation."
+  }
+]

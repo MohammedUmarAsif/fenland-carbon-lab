@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+local/
+config/local.yaml
+website/node_modules/
+website/dist/
+website/public/
+*.nc
+*.pkl
+*.joblib
+*.pt
+*.zip
+.serena/

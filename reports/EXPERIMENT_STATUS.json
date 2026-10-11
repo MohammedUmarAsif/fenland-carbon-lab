@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-12",
+  "registry_runs_completed": 101,
+  "rolling_selection_fits_completed": 56,
+  "A": "completed",
+  "B": "completed",
+  "C": "completed controlled RF ablations/diagnostics",
+  "D": "completed nested six-cell spatial and joint transfer, three seeds",
+  "E": "completed direct/component three-family, three-seed comparisons",
+  "F": "completed residual quantile calibration/evaluation; no IID guarantee",
+  "observations": "feasibility complete; incompatible/unverified simulation management, no score",
+  "pending_compute": [],
+  "publication": "pending rights, account/repository selection and reviewed approval"
+}

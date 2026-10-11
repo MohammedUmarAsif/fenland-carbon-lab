@@ -1,0 +1,43 @@
+name: Validate code and static site
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --locked
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run pytest -q
+      - run: uv run fenland-carbon-lab smoke
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: website/package-lock.json
+      - run: npm ci && npm run build
+        working-directory: website
+      - name: Validate research asset consistency when approved assets exist
+        run: |
+          if test -f website/public/research.json; then
+            node website/scripts/check-data.mjs
+          fi
+      - name: Browser checks when approved assets exist
+        working-directory: website
+        run: |
+          if test -f public/research.json; then
+            npx playwright install --with-deps chromium
+            npm run preview > /tmp/fenland-preview.log 2>&1 &
+            preview_pid=$!
+            trap 'kill "$preview_pid"' EXIT
+            for attempt in $(seq 1 20); do
+              if curl --silent --fail http://127.0.0.1:4173/ > /dev/null; then break; fi
+              sleep 1
+            done
+            npm run check
+          fi

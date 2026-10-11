@@ -1,0 +1,8 @@
+# Record approval only after actual author/data-provider permission is verified.
+approved: false
+data_derivatives: false
+dissertation: false
+data_licence_or_permission_locator: null
+dissertation_permission_locator: null
+approved_by: null
+approved_date: null

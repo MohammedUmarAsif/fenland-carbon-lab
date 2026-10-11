@@ -1,0 +1,15 @@
+{
+  "run_id": "weather-lstm-L60-s17",
+  "batch_size": 19368,
+  "repeats": 5,
+  "warmup": 1,
+  "median_seconds": 0.0830567000011797,
+  "includes": "Scaler application, local checkpoint loading, prediction, dataframe assembly; excludes extraction/window construction",
+  "hardware": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "logical_cpus": 16,
+  "ram_bytes": 33968046080,
+  "process_rss_after_bytes": 387600384,
+  "thread_budget": 4,
+  "jules_comparable_timing": null
+}

@@ -1,0 +1,3 @@
+# Appendix recovery and repair record
+
+DOCX paragraph text extracted verbatim to an ignored local text file. PDF text independently confirms scaler/window/split statements at pp. 41-42. Extraction is not executed: notebook magics, machine-specific paths and unsafe legacy deserialization are excluded. The reusable implementation is a new auditable rewrite, not a claim that extracted code reproduces submitted predictions. Repairs cover bound-based time labels, kg C numeric conversion, atmospheric sign, geodesic native-cell selection, shared-cell grouping, explicit horizon and current-weather alignment, global calendar/group splits and train-only transforms. Tests exercise these corrections. Matching submitted prediction artifacts remain missing.

@@ -1,0 +1,5 @@
+{
+  "resumed_worker_rss_bytes": 432693248,
+  "resumed_worker_peak_working_set_bytes": 458665984,
+  "scope": "resumed benchmark worker only; initial model fits ended before monitoring; not per-model memory"
+}

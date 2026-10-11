@@ -1,0 +1,3 @@
+# Copy to config/local.yaml, which is ignored. Supply your authorized source directory.
+source: /path/to/Dissertation
+output: local

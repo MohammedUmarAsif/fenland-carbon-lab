@@ -1,0 +1,191 @@
+[
+  {
+    "reference_number": 1,
+    "historical_entry": "Beer, C., Reichstein, M., Tomelleri, E., Ciais, P., Jung, M. and Carvalhais, N. (2010) \u2018Terrestrial gross carbon dioxide uptake: global patterns and controls\u2019, Nature, 464, 579\u2013583.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.1126/science.1184984",
+    "correction_note": "Beer title/journal/volume/pages corrected to Science 329,165-168"
+  },
+  {
+    "reference_number": 2,
+    "historical_entry": "Best, M.J., Pryor, M., Clark, D.B., Rooney, G.G., Essery, R.L.H. and M\u00e9nard, C.B. (2011) \u2018The Joint UK Land Environment Simulator (JULES), model description \u2013 Part 1: Energy and water fluxes\u2019, Geoscientific Model Development, 4, 677\u2013699.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.5194/gmd-4-677-2011",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 3,
+    "historical_entry": "Breiman, L. (2001) \u2018Random Forests\u2019, Machine Learning, 45, 5\u201332.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.1023/A:1010933404324",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 4,
+    "historical_entry": "Brenowitz, N.D. and Bretherton, C.S. (2018) \u2018Prognostic validation of a neural network unified physics parameterisation\u2019, Geophysical Research Letters, 45, 6289\u20136298.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.1029/2018GL078510",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 5,
+    "historical_entry": "Brenowitz, N.D. and Bretherton, C.S. (2019) \u2018Spatially extended tests of a neural network parameterisation trained by coarse-graining\u2019, Journal of Advances in Modelling Earth Systems, 11, 2728\u20132744.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.1029/2019MS001711",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 6,
+    "historical_entry": "CF-Conventions (2019) CF Metadata Conventions v1.7. Available at: https://cfconventions.org ",
+    "verification": "verified metadata version; raw file declares CF-1.6",
+    "verified_or_candidate_record": "https://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 7,
+    "historical_entry": "Chen, T. and Guestrin, C. (2016) \u2018XGBoost: A scalable tree boosting system\u2019, Proceedings of KDD 2016, 785\u2013794.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.1145/2939672.2939785",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 8,
+    "historical_entry": "Clark, D.B., Mercado, L.M., Sitch, S., Jones, C.D., Gedney, N. and Best, M.J. (2011) \u2018The Joint UK Land Environment Simulator (JULES) \u2013 Part 2: Carbon fluxes and vegetation dynamics\u2019, Geoscientific Model Development, 4, 701\u2013722.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.5194/gmd-4-701-2011",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 9,
+    "historical_entry": "Clifton-Brown, J.C. and Lewandowski, I. (2000) \u2018Water use efficiency and biomass partitioning of Miscanthus\u2019, Annals of Botany, 86, 191\u2013200.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.1006/anbo.2000.1183",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 10,
+    "historical_entry": "Cooper, H., Morrison, R., et al. (2020) \u2018Greenhouse gas dynamics of lowland Fen peat under contrasting management\u2019",
+    "verification": "unresolved incomplete entry; no exact publication identified",
+    "verified_or_candidate_record": null,
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 11,
+    "historical_entry": "Goodfellow, I., Bengio, Y. and Courville, A. (2016) Deep Learning. MIT Press.",
+    "verification": "verified authors/book/title/year",
+    "verified_or_candidate_record": "https://www.deeplearningbook.org/",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 12,
+    "historical_entry": "Hastings, A., Clifton-Brown, J., Wattenbach, M., Mitchell, C.P. and Smith, P. (2009) \u2018The impacts of bioenergy crops on land use, yield and greenhouse gas emissions\u2019, GCB Bioenergy, 1, 17\u201336.",
+    "verification": "unresolved title mismatch; related MISCANFOR 2009 paper is not automatically this reference",
+    "verified_or_candidate_record": "https://doi.org/10.1111/j.1757-1707.2009.01007.x",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 13,
+    "historical_entry": "Heaton, E.A., Dohleman, F.G. and Long, S.P. (2008) \u2018Meeting US biofuel goals with less land: the potential of Miscanthus\u2019, Annals of Applied Biology, 152, 175\u2013189.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.1111/j.1365-2486.2008.01662.x",
+    "correction_note": "Heaton journal/volume/pages differ; use corrected GCB record"
+  },
+  {
+    "reference_number": 14,
+    "historical_entry": "Hochreiter, S. and Schmidhuber, J. (1997) \u2018Long short-term memory\u2019, Neural Computation, 9, 1735\u20131780.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.1162/neco.1997.9.8.1735",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 15,
+    "historical_entry": "Hoyer, S. and Hamman, J.J. (2017) \u2018xarray: N-D labeled arrays and datasets in Python\u2019, Journal of Open Research Software, 5, 10.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.5334/jors.148",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 16,
+    "historical_entry": "Kelvin, J. et al. (2021) \u2018[Wicken Sedge Fen flux/management]\u2019.",
+    "verification": "unresolved placeholder; no verified peat-depth repair",
+    "verified_or_candidate_record": null,
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 17,
+    "historical_entry": "Kingma, D.P. and Ba, J. (2015) \u2018Adam: A method for stochastic optimization\u2019, arXiv preprint arXiv:1412.6980.",
+    "verification": "verified arXiv 2014; ICLR 2015 conference",
+    "verified_or_candidate_record": "https://arxiv.org/abs/1412.6980",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 18,
+    "historical_entry": "Launiainen, S. (2011) Canopy processes, fluxes and microclimate in a pine forest. PhD thesis, University of Helsinki.",
+    "verification": "verified institutional dissertation record",
+    "verified_or_candidate_record": "https://helda.helsinki.fi/server/api/core/bitstreams/9b7aae82-8964-4f1f-aa97-b9ea14d69c38/content",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 19,
+    "historical_entry": "Lasslop, G., et al. (2010) \u2018Separation of net ecosystem exchange into assimilation and respiration using a light-response curve approach\u2019, Global Change Biology, 16, 187\u2013208.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.1111/j.1365-2486.2009.02041.x",
+    "correction_note": "Lasslop online year 2009; issue year 2010"
+  },
+  {
+    "reference_number": 20,
+    "historical_entry": "Morrison, R. et al. (2021) \u2018[Fenland peat flux synthesis/monitoring]",
+    "verification": "unresolved placeholder; do not substitute a dataset citation as exact match",
+    "verified_or_candidate_record": null,
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 21,
+    "historical_entry": "Prechelt, L. (1998) \u2018Early stopping\u2014but when?\u2019, in Neural Networks: Tricks of the Trade. Springer, 55\u201369.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.1007/3-540-49430-8_3",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 22,
+    "historical_entry": "Rasp, S., Pritchard, M.S. and Gentine, P. (2018) \u2018Deep learning to represent subgrid processes in climate models\u2019, PNAS, 115, 9684\u20139689.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.1073/pnas.1810286115",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 23,
+    "historical_entry": "Reichstein, M., Falge, E., Baldocchi, D., Papale, D., Aubinet, M., et al. (2005) \u2018On the separation of net ecosystem exchange into assimilation and respiration\u2019, Global Change Biology, 11, 1424\u20131439.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.1038/s41586-019-0912-1",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 24,
+    "historical_entry": "Reichstein, M., Camps-Valls, G., Stevens, B., Jung, M., Denzler, J. and Carvalhais, N. (2019) \u2018Deep learning and process understanding in Earth system science\u2019, Nature, 566, 195\u2013204.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.1038/s41586-019-0912-1",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 25,
+    "historical_entry": "Wilkinson, M.D., Dumontier, M., Aalbersberg, I.J., Appleton, G., Axton, M., et al. (2016) \u2018The FAIR Guiding Principles for scientific data management and stewardship\u2019, Scientific Data, 3, 160018.",
+    "verification": "publisher-deposited metadata compared; see corrected bibliographic record",
+    "verified_or_candidate_record": "https://doi.org/10.1038/sdata.2016.18",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 26,
+    "historical_entry": "Natural England (2024) \u2018England Peat Map\u2019. Available at: https://naturalengland.blog.gov.uk/2024/08/06/with-a-lot-of-help-from-our-friends-assembling-an-england-peat-map/ ",
+    "verification": "verified official blog metadata; not a dataset release record",
+    "verified_or_candidate_record": "https://naturalengland.blog.gov.uk/2024/08/06/with-a-lot-of-help-from-our-friends-assembling-an-england-peat-map/",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  },
+  {
+    "reference_number": 27,
+    "historical_entry": "Needham, M. (2025) \u2018Timeline for transition of grassland to Miscanthus \u2013 Factsheet\u2019, Biomass Connect. Available at: https://www.biomassconnect.org/technical-articles/",
+    "verification": "unresolved exact factsheet/date; resource hub contains related material",
+    "verified_or_candidate_record": "https://www.biomassconnect.org/technical-articles/",
+    "correction_note": "Preserve historical entry; no unverified public equivalence"
+  }
+]
