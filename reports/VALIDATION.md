@@ -1,5 +1,21 @@
 # Delivery validation: 12 October 2026
 
+## Public aggregate release verification
+
+The author explicitly approved this release. Repository and live site:
+https://github.com/MohammedUmarAsif/fenland-carbon-lab and
+https://mohammedumarasif.github.io/fenland-carbon-lab/.
+GitHub deployment run 38182114849 passed scoped-package verification, build,
+Linux browser checks and deployment. All 19 remotely downloaded release assets
+match their manifest SHA-256 hashes. Private daily-series, dissertation reader,
+cell-extract and model-weight paths return 404.
+
+The first deployment attempt was rejected by GitHub's newly created `main`-only
+environment policy. The exact repository release branch was then added to that
+environment's allowlist. A CI formatter failure identified one unformatted line
+in the manifest writer; it was corrected before final validation. Source-data
+licensing remains unchanged; this release contains only the approved aggregate scope.
+
 ## Aggregate candidate follow-up
 
 Prepared a separate 2.7 MB aggregate-results edition following the author's
@@ -18,8 +34,9 @@ Lighthouse mobile simulation: **96 performance / 100 accessibility / 100 best
 practices / 100 SEO**. Detailed evidence is `local/public-review/`.
 
 The aggregate Pages workflow verifies a separately approved release scope and
-the exact package before deployment. No public release has been approved or
-made. The author's specific source access agreement remains unavailable; a
+the exact package before deployment. The author subsequently approved this
+aggregate release; live deployment verification is recorded separately below.
+The author's specific source access agreement remains unavailable; a
 research-results publication design does not establish contractual permission.
 
 ## Original complete local edition

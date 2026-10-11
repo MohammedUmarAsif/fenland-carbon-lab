@@ -87,8 +87,9 @@ confirmed by the available final document.
 ## Delivery and publication
 
 Repository: [MohammedUmarAsif/fenland-carbon-lab](https://github.com/MohammedUmarAsif/fenland-carbon-lab).
-The author approved the aggregate edition on 12 October 2026; deployment is being
-verified. No permission to distribute source data or thesis materials is implied.
+Live site: [Fenland Carbon Lab](https://mohammedumarasif.github.io/fenland-carbon-lab/).
+The author-approved aggregate edition was deployed and verified on 12 October
+2026. No permission to distribute source data or thesis materials is implied.
 
 An aggregate research-results candidate can show the measured work without
 including source daily rows, model binaries, scaler statistics or dissertation

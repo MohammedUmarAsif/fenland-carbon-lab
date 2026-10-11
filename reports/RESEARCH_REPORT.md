@@ -221,7 +221,7 @@ excludes harvest and other net ecosystem carbon balance terms.
 fits completed. Summed recorded fit/evaluation time for registry runs is
 16.54 minutes (not programme wall time). CPU budget four threads; hardware
 and library lockfiles are recorded. Local inference median
-0.0831 seconds for a 19368-sample
+0.0875 seconds for a 19368-sample
 batch under the explicitly stated preprocessing/I/O boundary. No equivalent
 JULES simulation timing exists, so acceleration over JULES is not claimed.
 
@@ -235,8 +235,8 @@ OBSERVATIONAL_FEASIBILITY.md. Missing exact course confirmation, source run sett
 Wicken peat-depth repair and some incomplete original references are explicit
 ledger entries. These limitations do not prevent local code/experiment completion.
 
-No paid compute, public repository, live deployment, collaborator messages or
-account changes were used. Public redistribution of simulation derivatives and
-dissertation content awaits recorded rights. The local site is fully generated;
-publication remains gated. Read README for commands and PUBLICATION.md for the
-concrete final deployment step.
+The research experiments used local CPU compute. No paid compute or collaborator
+messages were used. Publication status: Author-approved aggregate-results release; underlying data, daily rows, weights, scaler statistics and historical dissertation materials remain private. Repository: https://github.com/MohammedUmarAsif/fenland-carbon-lab.
+The complete local site is separate from the aggregate-results profile. No
+underlying source-data licence is inferred. Read README for commands and
+PUBLICATION.md for the exact release scope and remaining source-content limits.

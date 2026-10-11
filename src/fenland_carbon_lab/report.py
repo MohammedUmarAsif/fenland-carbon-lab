@@ -39,6 +39,14 @@ def report(local: Path, reports: Path):
     if memory_path.exists():
         (reports / "TRAINING_MEMORY.json").write_text(memory_path.read_text())
     rid = json.loads((out / "selected.json").read_text())["run_id"]
+    approval_path = Path("config/public-release.json")
+    approval = json.loads(approval_path.read_text()) if approval_path.exists() else {}
+    aggregate_approved = approval.get("approved") is True and approval.get("profile") == "aggregate"
+    publication = (
+        "Author-approved aggregate-results release; underlying data, daily rows, weights, scaler statistics and historical dissertation materials remain private. Repository: https://github.com/MohammedUmarAsif/fenland-carbon-lab."
+        if aggregate_approved
+        else "Local preview; publication pending scoped approval and applicable content/data rights."
+    )
     chosen = m[m.run_id.eq(rid) & m.target.eq("nee") & m.split.eq("test")].iloc[0]
 
     def metric(run):
@@ -264,11 +272,11 @@ OBSERVATIONAL_FEASIBILITY.md. Missing exact course confirmation, source run sett
 Wicken peat-depth repair and some incomplete original references are explicit
 ledger entries. These limitations do not prevent local code/experiment completion.
 
-No paid compute, public repository, live deployment, collaborator messages or
-account changes were used. Public redistribution of simulation derivatives and
-dissertation content awaits recorded rights. The local site is fully generated;
-publication remains gated. Read README for commands and PUBLICATION.md for the
-concrete final deployment step.
+The research experiments used local CPU compute. No paid compute or collaborator
+messages were used. Publication status: {publication}
+The complete local site is separate from the aggregate-results profile. No
+underlying source-data licence is inferred. Read README for commands and
+PUBLICATION.md for the exact release scope and remaining source-content limits.
 """
     (reports / "RESEARCH_REPORT.md").write_text(text, encoding="utf-8")
     status = {
@@ -283,7 +291,7 @@ concrete final deployment step.
         "F": "completed residual quantile calibration/evaluation; no IID guarantee",
         "observations": "feasibility complete; incompatible/unverified simulation management, no score",
         "pending_compute": [],
-        "publication": "pending rights, account/repository selection and reviewed approval",
+        "publication": publication,
     }
     (reports / "EXPERIMENT_STATUS.json").write_text(json.dumps(status, indent=2))
     walkthrough = f"""# Interview walkthrough and measured CV claims

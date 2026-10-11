@@ -10,6 +10,13 @@ daily series, weights, scaler statistics or historical dissertation materials.
 Those remain outside this release. The original access agreement was not
 provided or independently verified; its terms remain applicable.
 
+Published repository: [fenland-carbon-lab](https://github.com/MohammedUmarAsif/fenland-carbon-lab).
+Verified live aggregate site: [Fenland Carbon Lab](https://mohammedumarasif.github.io/fenland-carbon-lab/).
+First successful deployment: [GitHub Actions run 38182114849](https://github.com/MohammedUmarAsif/fenland-carbon-lab/actions/runs/38182114849).
+All 19 remote manifest assets matched their SHA-256 hashes. Daily-series, thesis,
+cell-extract and model-weight URLs returned 404. Publication does not extend to
+the complete private research edition.
+
 ## Aggregate research-results alternative, prepared 12 October 2026
 
 The author reports that the source data were provided for research and educational
@@ -58,8 +65,9 @@ the aggregate Pages workflow. The full-content workflow retains its original gat
 
 ## Full-content local edition
 
-No repository or public Pages URL has been created. Local work is complete only
-after the validation record and run registry confirm actual outputs.
+The repository has been created for the author-approved aggregate release.
+The original full-content edition remains local. The validation record and run
+registry distinguish completed research outputs from publication status.
 
 The concrete publication package has three rights categories:
 
