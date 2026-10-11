@@ -1,5 +1,15 @@
 # Publication readiness and rights
 
+## Recorded scoped release approval
+
+On 12 October 2026, Mohammed Umar Asif Sayed explicitly approved publication of
+the reviewed **aggregate-results edition** in this conversation. The exact
+scope and author approval are recorded in `config/public-release.json`.
+This approval does not grant a licence to redistribute the underlying data,
+daily series, weights, scaler statistics or historical dissertation materials.
+Those remain outside this release. The original access agreement was not
+provided or independently verified; its terms remain applicable.
+
 ## Aggregate research-results alternative, prepared 12 October 2026
 
 The author reports that the source data were provided for research and educational

@@ -86,6 +86,10 @@ confirmed by the available final document.
 
 ## Delivery and publication
 
+Repository: [MohammedUmarAsif/fenland-carbon-lab](https://github.com/MohammedUmarAsif/fenland-carbon-lab).
+The author approved the aggregate edition on 12 October 2026; deployment is being
+verified. No permission to distribute source data or thesis materials is implied.
+
 An aggregate research-results candidate can show the measured work without
 including source daily rows, model binaries, scaler statistics or dissertation
 reproduction. Run `uv run fenland-carbon-lab export-public`, then
@@ -93,8 +97,7 @@ reproduction. Run `uv run fenland-carbon-lab export-public`, then
 from `website`. See PUBLICATION.md for the exact scope and remaining access-term check.
 This profile is separate from the complete private research site.
 
-There is no public repository or live Pages URL yet. Local preview uses the
-URL printed by `npm run preview`. CI checks Python and the static build; the
+Local preview uses the URL printed by `npm run preview`. CI checks Python and the static build; the
 manual Pages workflow requires a reviewed rights record and approved assets.
 See [publication requirements](reports/PUBLICATION.md) for the concrete gate,
 [contribution and interview walkthrough](reports/INTERVIEW.md),

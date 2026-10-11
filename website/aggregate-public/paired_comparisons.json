@@ -1,0 +1,152 @@
+[
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-rf-L24-s17",
+    "difference_rmse_a_minus_b": -0.28888783564444953,
+    "lower95": -0.5258174873161414,
+    "upper95": -0.06478964435239339,
+    "block_days": 7,
+    "replicates": 300,
+    "shared_days": 1036
+  },
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-rf-L24-s17",
+    "difference_rmse_a_minus_b": -0.28888783564444953,
+    "lower95": -0.5899620996741319,
+    "upper95": 0.0005699754581480502,
+    "block_days": 30,
+    "replicates": 300,
+    "shared_days": 1036
+  },
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-rf-L24-s17",
+    "difference_rmse_a_minus_b": -0.28888783564444953,
+    "lower95": -0.6424489850303811,
+    "upper95": 0.0695271594903639,
+    "block_days": 90,
+    "replicates": 300,
+    "shared_days": 1036
+  },
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-lstm-L24-s17",
+    "difference_rmse_a_minus_b": -0.20353834252391811,
+    "lower95": -0.358814761671754,
+    "upper95": -0.05514059898838606,
+    "block_days": 7,
+    "replicates": 300,
+    "shared_days": 1036
+  },
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-lstm-L24-s17",
+    "difference_rmse_a_minus_b": -0.20353834252391811,
+    "lower95": -0.3733527490481101,
+    "upper95": -0.056384920726225245,
+    "block_days": 30,
+    "replicates": 300,
+    "shared_days": 1036
+  },
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-lstm-L24-s17",
+    "difference_rmse_a_minus_b": -0.20353834252391811,
+    "lower95": -0.34924621812176604,
+    "upper95": -0.07491352348994258,
+    "block_days": 90,
+    "replicates": 300,
+    "shared_days": 1036
+  },
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-boosting-L24-s17",
+    "difference_rmse_a_minus_b": -0.1424873028081266,
+    "lower95": -0.32790142973332304,
+    "upper95": 0.015714693094770704,
+    "block_days": 7,
+    "replicates": 300,
+    "shared_days": 1036
+  },
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-boosting-L24-s17",
+    "difference_rmse_a_minus_b": -0.1424873028081266,
+    "lower95": -0.32538084813774903,
+    "upper95": 0.06524519556725997,
+    "block_days": 30,
+    "replicates": 300,
+    "shared_days": 1036
+  },
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-boosting-L24-s17",
+    "difference_rmse_a_minus_b": -0.1424873028081266,
+    "lower95": -0.3590505981663659,
+    "upper95": 0.1073180326655043,
+    "block_days": 90,
+    "replicates": 300,
+    "shared_days": 1036
+  },
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-rf-L60-s17",
+    "difference_rmse_a_minus_b": -0.17045730769978462,
+    "lower95": -0.49423360625614293,
+    "upper95": 0.17631217246787526,
+    "block_days": 7,
+    "replicates": 300,
+    "shared_days": 1036
+  },
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-rf-L60-s17",
+    "difference_rmse_a_minus_b": -0.17045730769978462,
+    "lower95": -0.628632633589866,
+    "upper95": 0.2983192225758114,
+    "block_days": 30,
+    "replicates": 300,
+    "shared_days": 1036
+  },
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-rf-L60-s17",
+    "difference_rmse_a_minus_b": -0.17045730769978462,
+    "lower95": -0.585730028011416,
+    "upper95": 0.38886128580300267,
+    "block_days": 90,
+    "replicates": 300,
+    "shared_days": 1036
+  },
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-boosting-L60-s17",
+    "difference_rmse_a_minus_b": -0.07149642704315085,
+    "lower95": -0.3159656417356149,
+    "upper95": 0.1799801455108857,
+    "block_days": 7,
+    "replicates": 300,
+    "shared_days": 1036
+  },
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-boosting-L60-s17",
+    "difference_rmse_a_minus_b": -0.07149642704315085,
+    "lower95": -0.3305261797830986,
+    "upper95": 0.22498949190894946,
+    "block_days": 30,
+    "replicates": 300,
+    "shared_days": 1036
+  },
+  {
+    "a": "weather-lstm-L60-s17",
+    "b": "weather-boosting-L60-s17",
+    "difference_rmse_a_minus_b": -0.07149642704315085,
+    "lower95": -0.37669171278795405,
+    "upper95": 0.2927417267788902,
+    "block_days": 90,
+    "replicates": 300,
+    "shared_days": 1036
+  }
+]

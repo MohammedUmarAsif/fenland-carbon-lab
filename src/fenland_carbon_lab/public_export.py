@@ -36,7 +36,9 @@ FILES = {
 }
 
 
-def export_public(local: Path, destination: Path, reports: Path = Path("reports")):
+def export_public(
+    local: Path, destination: Path, reports: Path = Path("reports"), approval: dict | None = None
+):
     destination.mkdir(parents=True, exist_ok=True)
     # Refuse mixed packages; never remove an existing local/private asset.
     existing = {
@@ -73,6 +75,10 @@ def export_public(local: Path, destination: Path, reports: Path = Path("reports"
         "scope": "New code, methods and aggregate research findings. No source observations/simulator rows, daily predictions, weights, scaler statistics or dissertation reproduction.",
         "rights": "Research/educational access asserted by author; public redistribution licence for source materials not established. No source-data licence is granted by this package. Aggregate publication must still comply with the original access agreement.",
     }
+    if approval and approval.get("approved") is True:
+        data["status"]["publication"] = (
+            "Author-approved aggregate release; source materials remain private"
+        )
     (destination / "research.json").write_text(
         json.dumps(data, ensure_ascii=False), encoding="utf-8"
     )
@@ -81,10 +87,17 @@ def export_public(local: Path, destination: Path, reports: Path = Path("reports"
     for name in REPORTS:
         shutil.copyfile(reports / name, destination / name)
     (destination / "robots.txt").write_text("User-agent: *\nAllow: /\n", encoding="utf-8")
+    # Canonical LF bytes make manifest hashes portable without changing values.
+    for path in destination.iterdir():
+        if path.is_file() and path.name != "PACKAGE_MANIFEST.json":
+            path.write_bytes(path.read_bytes().replace(b"\r\n", b"\n"))
     manifest = {
         "profile": "aggregate",
         "date": "2026-10-12",
-        "public_release_approved": False,
+        "public_release_approved": bool(
+            approval and approval.get("approved") is True and approval.get("profile") == "aggregate"
+        ),
+        "approval_reference": approval.get("approval_reference") if approval else None,
         "scope": data["scope"],
         "rights": data["rights"],
         "files": {

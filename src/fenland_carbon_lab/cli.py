@@ -71,9 +71,13 @@ def main():
 
         report(local, Path("reports"))
     elif args.command == "export-public":
+        import json
+
         from .public_export import export_public
 
-        export_public(local, Path("website/aggregate-public"))
+        approval_file = Path("config/public-release.json")
+        approval = json.loads(approval_file.read_text()) if approval_file.exists() else None
+        export_public(local, Path("website/aggregate-public"), approval=approval)
     elif args.command == "evidence":
         from .evidence import evidence
 

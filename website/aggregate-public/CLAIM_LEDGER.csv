@@ -1,0 +1,16 @@
+claim,source_locator,verification_method,status,correction,allowed_public_wording
+Daily interval geometry,NetCDF time/time_bnds/latitude/longitude,Metadata and bounded coordinate reads,reproduced artifact,Daily end-labelled paired native coordinates,24 steps are 24 days; mesh topology is not established
+Train-only historic scaling,Submitted appendix pp.41-42,Code inspection and positional-slice demonstration,historical report,Full fit and site-sorted slices differ from prose,Printed implementation does not prove leakage-safe submitted metrics
+Historic nowcast,Appendix Xs[i-window:i],Index reasoning versus explicit alignment tests,historical report,Weather ends before target row,New task explicitly includes current interval weather
+LSTM universally best,August saved test CSVs,Metric recomputation,reproduced artifact,RF lower RMSE in this different direct-NEE experiment,No universal model superiority claim
+Reliable historic uncertainty,uncertainty_test.csv and scaler JSON,Scale-only spread transformation and coverage calculation,reproduced artifact,Repaired bounds still under-cover,Historic intervals are not calibrated
+Seven independent sites,"Site CSV, raw nearest cells, August exports",Geodesic match and exact equality checks,reproduced artifact,Redmere labels share a native cell,Seven labels describe six simulated cells
+Atmospheric sign,August all_sites_timeseries.csv,"35,791-row identity residual",reproduced artifact,Historic sign opposite,Positive=new release; historic alternate sign labelled
+Physical carbon units,Raw variables and JULES docs,Metadata and atomic mass tests,newly validated result,"Convert numeric values, retain raw",Component fluxes standardized as carbon with declared mass constant
+Exact course title,Final cover and July draft,Document text comparison,unresolved,Final cover says Master of Science; draft names Satellite Data Science,University of Leicester MSc dissertation (2025)
+Crop/management and run version,cpft and global NetCDF metadata,Search inventory/metadata; no namelist recovered,unresolved,cpft=1 insufficient,Scenario-specific crop/management comparability unverified
+Wicken peat depth,EC_flux_tower_sites.csv,Original value inspection,unresolved,4-Feb retained; verified replacement not found,Peat depth omitted from predictors and interpretation
+Regional generalisation,Six cells and forcing correlation tables,Grouped held-cell tests and nested tuning,newly validated result,Limited native-cell transfer task,Transfer evidence is bounded to these nearby simulated cells
+Observational validation,EIDC supporting RTF/CSV records,Coordinates/management/QA/overlap assessment,unresolved,Configuration mismatch gate,No direct tower validation score is reported
+JULES speedup/carbon savings,No comparable run timing/interventions,Evidence absence,unresolved,Only local inference measured,No acceleration over JULES or avoided emissions claim
+Original work versus extension,"2025 dissertation, 2026 code registry",Dated provenance and contribution notes,newly validated result,AI-assisted extension distinct,Do not date later experiments to the MSc
