@@ -5,7 +5,7 @@ import json
 import pandas as pd
 import pytest
 
-from fenland_carbon_lab.public_export import FILES, REPORTS, export_public
+from fenland_carbon_lab.public_export import FILES, MEDIA_FILES, REPORTS, export_public
 
 
 def test_aggregate_allowlist_and_mixed_destination_rejected(tmp_path):
@@ -36,7 +36,7 @@ def test_aggregate_allowlist_and_mixed_destination_rejected(tmp_path):
             else "New authored methods"
         )
     export_public(local, output, reports)
-    assert {p.name for p in output.iterdir()} == FILES
+    assert {p.name for p in output.iterdir()} == FILES - MEDIA_FILES
     data = json.loads((output / "research.json").read_text())
     assert set(data["qc"]) == {"cells", "rows"}
     assert "mapping" not in data and "assets" not in data and "runs" not in data

@@ -1,0 +1,79 @@
+{
+  "source_sha256": "591b093fcdde219d3d4a3e1d0688fb628a5e23d258d3c8bb7e9ea4f0370e740e",
+  "pages": 50,
+  "cover_year": 2026,
+  "title": "Meteorology Driven LSTM Surrogates for Emulating JULES-Crop Carbon Flux Components in Miscanthus Simulations",
+  "claims": [
+    {
+      "topic": "Document identity",
+      "pages": "1",
+      "status": "reproduced",
+      "reported": "Revised meteorology-driven component surrogate dissertation, cover 2026",
+      "evidence": "PDF cover inspected; distinct from earlier 2025 materials."
+    },
+    {
+      "topic": "NEE headline scores",
+      "pages": "2, 28",
+      "status": "contradicted",
+      "reported": "Abstract NEE R\u00b2 approximately 0.76; Table 2 gives 0.804",
+      "evidence": "Internal inconsistency. These reported scores are not adopted as current verified results."
+    },
+    {
+      "topic": "History window",
+      "pages": "25, 44",
+      "status": "contradicted",
+      "reported": "Methods 24 daily steps; appendix config window=30",
+      "evidence": "Document text/config conflict; appendix execution lineage unresolved."
+    },
+    {
+      "topic": "Baseline information",
+      "pages": "26, 47",
+      "status": "unresolved",
+      "reported": "Methods same-window engineered summaries; appendix comment last-step snapshots",
+      "evidence": "Supporting original baseline module/execution lineage required. Current benchmark gives all daily lags to tabular models."
+    },
+    {
+      "topic": "Units",
+      "pages": "25, 44, 46",
+      "status": "contradicted",
+      "reported": "Methods no conversion, kg units; appendix includes carbon-to-micromole conversion",
+      "evidence": "Document/appendix inconsistency. Current source metadata and exact 12.0107 carbon mass conversion audited."
+    },
+    {
+      "topic": "Chronological split and scaling",
+      "pages": "25",
+      "status": "reported",
+      "reported": "70/15/15 chronology and train-only scaling",
+      "evidence": "Narrative inspected; original executed artifacts do not establish this revised claim. Current pipeline verifies explicit year partitions and training-only fitting."
+    },
+    {
+      "topic": "Carbon accounting",
+      "pages": "10, 24, 28",
+      "status": "reproduced",
+      "reported": "NEE = plant respiration + soil respiration minus uptake",
+      "evidence": "Identity explicitly implemented and tested in current pipeline; not proof of all historical execution."
+    },
+    {
+      "topic": "Monthly results",
+      "pages": "30, 49",
+      "status": "unresolved",
+      "reported": "Monthly improvements; appendix calls approximate index bins",
+      "evidence": "Historical timestamp lineage unresolved. Current analysis uses exact calendar months and excludes incomplete months."
+    },
+    {
+      "topic": "Miscanthus and simulator configuration",
+      "pages": "1, 24",
+      "status": "unresolved",
+      "reported": "Miscanthus-parameterised JULES-Crop",
+      "evidence": "Retained as dissertation-described setting; source run/version/crop and management configuration not established by available NetCDF metadata."
+    },
+    {
+      "topic": "Observational accuracy and speedup",
+      "pages": "2, 37, 38",
+      "status": "unresolved",
+      "reported": "Simulator fidelity, with potential acceleration and future diagnostics",
+      "evidence": "No aligned observational validation or paired JULES runtime benchmark; no current field-accuracy or speedup claim."
+    }
+  ],
+  "status_meaning": "Reproduced refers to the identified document fact or current implementation; never implies reproduction of all revised dissertation scores."
+}

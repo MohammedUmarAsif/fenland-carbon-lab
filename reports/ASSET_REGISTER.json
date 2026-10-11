@@ -1,0 +1,48 @@
+[
+  {
+    "file": "fen-landscape.jpg",
+    "creator": "Ashley Dace",
+    "title": "Fen Landscape",
+    "source": "https://commons.wikimedia.org/wiki/File:Fen_Landscape_-_geograph.org.uk_-_2445197.jpg",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "alt": "Open agricultural Fenland landscape near Wicken, photographed in 2011.",
+    "width": 800,
+    "height": 531,
+    "sha256": "b60677a37c22d3a55769b145f7781d41d0c05ee710689978fc23ba7c1bbac68a",
+    "changes": "Original bytes retained. Responsive CSS display crops the opening landscape photograph; photograph adaptations remain CC BY-SA 2.0. Map also shown as a labelled CSS regional crop; full map and source accessible.",
+    "attribution": "Fen Landscape by Ashley Dace; CC BY-SA 2.0.",
+    "retrieved": "2026-10-12"
+  },
+  {
+    "file": "fen-soil.jpg",
+    "creator": "N Chadwick",
+    "title": "Dark fenland soil",
+    "source": "https://commons.wikimedia.org/wiki/File:Dark_fenland_soil_-_geograph.org.uk_-_4322530.jpg",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "alt": "Dark soil in an agricultural field near Wicken, photographed in 2014.",
+    "width": 640,
+    "height": 430,
+    "sha256": "e8af6c6ac66162391dc7f5c8532518a017fcef68a507da103c60d8912677695b",
+    "changes": "Original bytes retained. Responsive CSS display crops the opening landscape photograph; photograph adaptations remain CC BY-SA 2.0. Map also shown as a labelled CSS regional crop; full map and source accessible.",
+    "attribution": "Dark fenland soil by N Chadwick; CC BY-SA 2.0.",
+    "retrieved": "2026-10-12"
+  },
+  {
+    "file": "england-peat-map.png",
+    "creator": "Natural England",
+    "title": "England Peat Map: peat depth",
+    "source": "https://naturalengland.blog.gov.uk/2025/05/12/a-new-peat-map-for-england/",
+    "licence": "Open Government Licence v3.0",
+    "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "licence_evidence": "https://publications.naturalengland.org.uk/publication/5075614867128320",
+    "alt": "Natural England's national peat-depth map, with a displayed regional detail for East Anglia.",
+    "width": 620,
+    "height": 770,
+    "sha256": "5bc1502592bd19819513084e91bac000b3a80972f4b9f418b8b1d32b3ad4e711",
+    "changes": "Original bytes retained. Responsive CSS display crops the opening landscape photograph; photograph adaptations remain CC BY-SA 2.0. Map also shown as a labelled CSS regional crop; full map and source accessible.",
+    "attribution": "England Peat Map: peat depth by Natural England; Open Government Licence v3.0.",
+    "retrieved": "2026-10-12"
+  }
+]

@@ -1,5 +1,40 @@
 # Delivery validation: 12 October 2026
 
+## Visual research story extension
+
+The following checks apply to the ten-chapter aggregate story extension;
+earlier sections below retain their historical verification context.
+
+- Ruff checks and formatting pass; 28 Python tests pass, including
+  training-only support fitting, frozen thresholds, non-finite inputs,
+  keyed split integrity, small groups and aggregate-only output fields.
+- The support protocol was recorded before computation. Existing selected
+  predictions and intervals were evaluated without retraining or reselection.
+- All 118 recorded benchmark output hashes, 86 original source file hashes,
+  and the separately supplied revised 2026 PDF hash are unchanged.
+- The exact release allowlist contains 27 summaries/media files plus its
+  manifest. Three licensed context images have creator, source, licence,
+  changes, attribution, alt text, dimensions and checksums in the asset register.
+- TypeScript and aggregate builds pass. The release gate checks exact files,
+  hashes, image signatures, private-field exclusions and small-group suppression.
+- Rendered story review covers desktop, 390px mobile, dark mode, reduced
+  motion and a 720x500 effective CSS viewport representing 200% layout zoom.
+  This last check is a layout simulation, not an actual browser zoom action.
+  All ten chapters and ten charts render, with no document overflow, page
+  errors or automated WCAG A/AA violations. Keyboard skip navigation, legacy
+  benchmark links, query restoration, clean root URL and downloads pass.
+- Screenshots were reviewed for chart legends, labels, contextual map crops
+  and readable narrative. Automated checks do not certify newcomer comprehension
+  or replace independent scientific review. Both remain useful next evaluations.
+- Publication is conditional on the GitHub workflow repeating the package,
+  build and rendered checks. Remote hashes and live browser checks are repeated
+  after deployment; local verification alone does not establish live delivery.
+
+The supplementary analysis is exploratory within an inspected retrospective
+dataset. Fitted support statistics and row flags remain private. The revised
+dissertation is an audited historical source, not executed evidence. Proposed
+research packages are not demonstrated management benefits or publication readiness.
+
 ## Public aggregate release verification
 
 The author explicitly approved this release. Repository and live site:

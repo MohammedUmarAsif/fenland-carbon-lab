@@ -24,6 +24,7 @@ def main():
             "smoke",
             "report",
             "evidence",
+            "support",
         ],
     )
     p.add_argument("--config", type=Path, default=Path("config/local.yaml"))
@@ -82,6 +83,10 @@ def main():
         from .evidence import evidence
 
         evidence(source, local, Path("reports"))
+    elif args.command == "support":
+        from .support import run_support
+
+        run_support(local, Path("reports"))
 
 
 if __name__ == "__main__":

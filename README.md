@@ -109,3 +109,21 @@ MIT applies to newly written code/methods documentation, not the thesis or data.
 Supervisor/data-provider/JULES community and AI contributions are distinguished
 in the report and site. Cite the extension using CITATION.cff, separately from
 the 2025 thesis.
+
+The public edition now provides a ten-chapter guided research story and an
+evidence area. The revised 2026 dissertation is audited in
+[REVISED_DISSERTATION_AUDIT.md](reports/REVISED_DISSERTATION_AUDIT.md); its
+original bytes and legacy appendix code remain private and unexecuted.
+[SUPPLEMENTARY_PROTOCOL.md](reports/SUPPLEMENTARY_PROTOCOL.md) defines the
+bounded exploratory input-support analysis, run with
+`uv run fenland-carbon-lab support --config config/local.yaml`.
+No original benchmark is retrained or reselected. Aggregate exports contain
+no fitted support statistics or row-level flags.
+
+`uv run python scripts/prepare_story.py` prepares the audit and three explicitly
+licensed context images from the documented local source and public URLs.
+Then export and build the aggregate profile as above. Media attribution and
+licences are recorded in [ASSET_REGISTER.json](reports/ASSET_REGISTER.json).
+The [publication pathway](reports/PUBLICATION_PATHWAY.md) contains a draft
+abstract, evidence matrix and three proposed research packages; it does not
+claim publication readiness or demonstrated management benefits.

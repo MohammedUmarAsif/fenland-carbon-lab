@@ -9,6 +9,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from .story import story_summary
+
 REPORTS = (
     "RESEARCH_REPORT.md",
     "PROTOCOL.md",
@@ -23,7 +25,13 @@ REPORTS = (
     "EXPERIMENT_STATUS.json",
     "VALIDATION.md",
     "PUBLICATION.md",
+    "SUPPLEMENTARY_PROTOCOL.md",
+    "REVISED_DISSERTATION_AUDIT.json",
+    "REVISED_DISSERTATION_AUDIT.md",
+    "PUBLICATION_PATHWAY.md",
+    "ASSET_REGISTER.json",
 )
+MEDIA_FILES = {"fen-landscape.jpg", "fen-soil.jpg", "england-peat-map.png"}
 FILES = {
     "research.json",
     "metrics.csv",
@@ -33,6 +41,7 @@ FILES = {
     "robots.txt",
     "PACKAGE_MANIFEST.json",
     *REPORTS,
+    *MEDIA_FILES,
 }
 
 
@@ -59,14 +68,10 @@ def export_public(
         "selected": selected,
         "metrics": json.loads(pd.read_csv(runs / "metrics.csv").to_json(orient="records")),
         "coverage": json.loads(
-            coverage[coverage.run_id.eq(selected["run_id"]) & coverage.group.ne("cell")].to_json(
-                orient="records"
-            )
+            coverage[coverage.run_id.eq(selected["run_id"])].to_json(orient="records")
         ),
         "diagnostics": json.loads(
-            diagnostics[
-                diagnostics.run_id.eq(selected["run_id"]) & diagnostics.group.ne("cell")
-            ].to_json(orient="records")
+            diagnostics[diagnostics.run_id.eq(selected["run_id"])].to_json(orient="records")
         ),
         "paired": json.loads((runs / "paired_comparisons.json").read_text()),
         "bibliography": json.loads((reports / "BIBLIOGRAPHY.json").read_text()),
@@ -79,6 +84,8 @@ def export_public(
         data["status"]["publication"] = (
             "Author-approved aggregate release; source materials remain private"
         )
+    data["schema_version"] = 2
+    data["story"] = story_summary(local, reports, selected)
     (destination / "research.json").write_text(
         json.dumps(data, ensure_ascii=False), encoding="utf-8"
     )
@@ -86,10 +93,14 @@ def export_public(
         shutil.copyfile(runs / name, destination / name)
     for name in REPORTS:
         shutil.copyfile(reports / name, destination / name)
+    for name in MEDIA_FILES:
+        media = local / "story-media" / name
+        if media.exists():
+            shutil.copyfile(media, destination / name)
     (destination / "robots.txt").write_text("User-agent: *\nAllow: /\n", encoding="utf-8")
     # Canonical LF bytes make manifest hashes portable without changing values.
     for path in destination.iterdir():
-        if path.is_file() and path.name != "PACKAGE_MANIFEST.json":
+        if path.is_file() and path.name not in MEDIA_FILES | {"PACKAGE_MANIFEST.json"}:
             path.write_bytes(path.read_bytes().replace(b"\r\n", b"\n"))
     manifest = {
         "profile": "aggregate",
