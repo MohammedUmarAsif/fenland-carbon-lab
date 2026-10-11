@@ -1,5 +1,29 @@
 # Delivery validation: 12 October 2026
 
+## Aggregate candidate follow-up
+
+Prepared a separate 2.7 MB aggregate-results edition following the author's
+research/educational access clarification. Latest pytest: **24 passed**. New
+test verifies the export allowlist, omission of source series/private metadata,
+unapproved candidate state and refusal to overwrite a mixed/private destination.
+Ruff and both build profiles pass. The complete private site's browser checks
+continue to pass.
+
+The aggregate edition passes desktop, mobile and dark-mode axe A/AA checks,
+overflow checks, query-state restoration, benchmark controls, unavailable-result
+state, metric downloads, all local links and 200% equivalent layout. Package
+hashes agree; prohibited daily-value fields and source-series assets are absent.
+Desktop/mobile/dark screenshots were inspected, including chart axis contrast.
+Lighthouse mobile simulation: **96 performance / 100 accessibility / 100 best
+practices / 100 SEO**. Detailed evidence is `local/public-review/`.
+
+The aggregate Pages workflow verifies a separately approved release scope and
+the exact package before deployment. No public release has been approved or
+made. The author's specific source access agreement remains unavailable; a
+research-results publication design does not establish contractual permission.
+
+## Original complete local edition
+
 All A–F experiment stages completed: 101 primary/ablation/transfer runs and
 56 rolling-selection fits. No research compute remains pending.
 

@@ -3,9 +3,10 @@ import {LineChart, BarChart, ScatterChart} from 'echarts/charts';
 import {GridComponent, TooltipComponent, LegendComponent, DataZoomComponent, MarkLineComponent, AriaComponent} from 'echarts/components';
 import {CanvasRenderer} from 'echarts/renderers';
 import './style.css';
+import {renderPublic} from './public';
 echarts.use([LineChart,BarChart,ScatterChart,GridComponent,TooltipComponent,LegendComponent,DataZoomComponent,MarkLineComponent,AriaComponent,CanvasRenderer]);
 type Row=Record<string,any>;
-type Research={columns:string[];metrics:Row[];coverage:Row[];diagnostics:Row[];mapping:Row[];runs:Row[];assets:Row[];selected:Row;paired:Row[];historical:Row;qc:Row;bibliography:Row[];covariance:Row[]};
+type Research={publication_mode?:string;columns:string[];metrics:Row[];coverage:Row[];diagnostics:Row[];mapping:Row[];runs:Row[];assets:Row[];selected:Row;paired:Row[];historical:Row;qc:Row;bibliography:Row[];covariance:Row[]};
 const app=document.querySelector<HTMLDivElement>('#app')!;
 const charts:echarts.ECharts[]=[];
 const esc=(s:any)=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
@@ -16,6 +17,7 @@ function chart(id:string,option:Row){const el=document.getElementById(id)!;const
 function table(rows:Row[],fields:string[]){return `<div class="table-wrap" tabindex="0" role="region" aria-label="Scrollable evidence table"><table><thead><tr>${fields.map(f=>`<th scope="col">${esc(f.replaceAll('_',' '))}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${fields.map(f=>`<td class="${typeof r[f]==='number'?'number':''}">${typeof r[f]==='number'?fmt(r[f],f==='n'||f==='seed'||f==='length'?0:3):esc(r[f])}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;}
 async function start(){
  const response=await fetch('./research.json');if(!response.ok)throw new Error('Validated research assets are missing. Run the offline export command.');const d:Research=await response.json();
+ if(d.publication_mode==='aggregate'){renderPublic(d,{chart,table,esc,fmt});addEventListener('resize',()=>charts.forEach(c=>c.resize()));return;}
  const chosen=d.metrics.find(r=>r.run_id===d.selected.run_id&&r.target==='nee'&&r.split==='test')!;
  const seedResults=d.metrics.filter(r=>r.run_id.startsWith('weather-lstm-L60-')&&r.target==='nee'&&r.split==='test');
  const boost60=d.metrics.find(r=>r.run_id==='weather-boosting-L60-s17'&&r.target==='nee'&&r.split==='test')!;

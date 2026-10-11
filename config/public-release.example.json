@@ -1,0 +1,10 @@
+{
+  "approved": false,
+  "profile": "aggregate",
+  "aggregate_findings_publication_allowed": false,
+  "scope": "New code, authored methods and aggregate research findings only; no source daily rows, model weights, scaler statistics or original dissertation reproduction",
+  "approval_reference": null,
+  "access_agreement_publication_check": null,
+  "approved_by": null,
+  "approved_date": null
+}

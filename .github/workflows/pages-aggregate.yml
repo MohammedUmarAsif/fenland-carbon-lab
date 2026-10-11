@@ -1,0 +1,46 @@
+name: Publish approved aggregate research results
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: website/package-lock.json
+      - name: Verify scoped approval and release package
+        run: node website/scripts/check-release.mjs
+      - run: npm ci && npm run build -- --mode aggregate
+        working-directory: website
+      - name: Verify rendered aggregate edition
+        working-directory: website
+        run: |
+          npx playwright install --with-deps chromium
+          npm run preview -- --mode aggregate --port 4174 > /tmp/fenland-preview.log 2>&1 &
+          preview_pid=$!
+          trap 'kill "$preview_pid"' EXIT
+          for attempt in $(seq 1 20); do
+            if curl --silent --fail http://127.0.0.1:4174/ > /dev/null; then break; fi
+            sleep 1
+          done
+          node scripts/check-public.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: website/aggregate-dist
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

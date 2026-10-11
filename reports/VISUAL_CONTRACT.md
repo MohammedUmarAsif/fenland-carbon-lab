@@ -11,3 +11,8 @@ generated scenery or decorative emissions maps. Chart sources always visible.
 Responsive 1280/390px, keyboard-operable native controls, labelled charts with
 summaries and downloadable data, visible focus, 200% zoom and dark theme.
 One hiring path, deeper explorer/research/dissertation/reproduction paths.
+
+Aggregate-results profile: retain the editorial style, numerical benchmarks,
+query-state controls and accessible evidence tables. Omit daily-series exploration
+and historical thesis reproduction; explain the release scope clearly. Build and
+review this profile separately from the complete private research edition.

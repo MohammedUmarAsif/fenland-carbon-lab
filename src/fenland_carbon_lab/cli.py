@@ -20,6 +20,7 @@ def main():
             "run",
             "summarize",
             "export",
+            "export-public",
             "smoke",
             "report",
             "evidence",
@@ -69,6 +70,10 @@ def main():
         from .report import report
 
         report(local, Path("reports"))
+    elif args.command == "export-public":
+        from .public_export import export_public
+
+        export_public(local, Path("website/aggregate-public"))
     elif args.command == "evidence":
         from .evidence import evidence
 

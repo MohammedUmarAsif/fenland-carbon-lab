@@ -86,6 +86,13 @@ confirmed by the available final document.
 
 ## Delivery and publication
 
+An aggregate research-results candidate can show the measured work without
+including source daily rows, model binaries, scaler statistics or dissertation
+reproduction. Run `uv run fenland-carbon-lab export-public`, then
+`npm run build -- --mode aggregate` and `npm run preview -- --mode aggregate --port 4174`
+from `website`. See PUBLICATION.md for the exact scope and remaining access-term check.
+This profile is separate from the complete private research site.
+
 There is no public repository or live Pages URL yet. Local preview uses the
 URL printed by `npm run preview`. CI checks Python and the static build; the
 manual Pages workflow requires a reviewed rights record and approved assets.

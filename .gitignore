@@ -8,6 +8,8 @@ config/local.yaml
 website/node_modules/
 website/dist/
 website/public/
+website/aggregate-public/
+website/aggregate-dist/
 *.nc
 *.pkl
 *.joblib
