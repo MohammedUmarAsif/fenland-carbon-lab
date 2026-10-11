@@ -106,9 +106,7 @@ def export_public(
             if p.is_file() and p.name != "PACKAGE_MANIFEST.json"
         },
     }
-    (destination / "PACKAGE_MANIFEST.json").write_text(
-        json.dumps(manifest, indent=2), encoding="utf-8"
-    )
+    (destination / "PACKAGE_MANIFEST.json").write_bytes(json.dumps(manifest, indent=2).encode("utf-8"))
     assert {p.name for p in destination.iterdir() if p.is_file()} <= FILES
     print(
         f"Prepared aggregate candidate: {len(manifest['files'])} files; no daily series or thesis media"
